@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { clientLogos, featureCategories } from "../utils/homeUtils";
+import HeroSection from "../components/HeroSection/HeroSection";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 
 const cards = [
@@ -43,45 +44,8 @@ const cards = [
 export default function Home() {
   return (
     <>
-      <header className="section-header background-color-gray">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-small">
-              <div className="text-align-center padding-top">
-                <div className="margin-bottom margin-small">
-                  <h1 className="heading-style-h2 text-align-center">
-                    Logiciel de gestion de production industrielle en temps réel
-                  </h1>
-                </div>
-                <div className="margin-top margin-medium">
-                  <div className="button-group is-center">
-                    <Link
-                      to="/solution/logiciel-trs"
-                      className="button w-button"
-                    >
-                      Solution complète de suivi
-                    </Link>
-                    <Link
-                      to="/demander-une-demo"
-                      className="button is-secondary w-button"
-                    >
-                      Demander une démo
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-graphic-main">
-            <img
-              className="hero-graphic"
-              src="/images/Dashboard-suivi-production-industrielle_1.avif"
-              width="1070"
-              alt="Dashboard suivi de production client RealTiMES"
-              loading="eager"
-            />
-          </div>
-        </div>
+      <header>
+        <HeroSection />
       </header>
 
       <section className="section is-gray">
