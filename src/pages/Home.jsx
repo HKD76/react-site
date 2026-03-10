@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { clientLogos, featureCategories } from "../utils/homeUtils";
 import HeroSection from "../components/HeroSection/HeroSection";
+import ClientsSection from "../components/ClientsSection/ClientsSection";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
-
+// import cards from "../data/featuresCards";
+// import clientLogos from "../data/clientLogos";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -40,6 +41,15 @@ const cards = [
     text: "Amélioration du TRS, réduction des arrêts et ROI inférieur à 12 mois.",
   },
 ];
+const clientLogos = [
+  { src: "/images/panzani.webp", alt: "Panzani" },
+  { src: "/images/lactalis.webp", alt: "Lactalis" },
+  { src: "/images/knauf.webp", alt: "Knauf" },
+  { src: "/images/laitiere.webp", alt: "Laitiere" },
+  { src: "/images/plastic-omnium.webp", alt: "Pastic-Omnium" },
+  { src: "/images/ldc.webp", alt: "LDC" },
+  { src: "/images/msd-logo.webp", alt: "MSD" },
+];
 
 export default function Home() {
   return (
@@ -47,62 +57,10 @@ export default function Home() {
       <header>
         <HeroSection />
       </header>
-
-      <section className="section is-gray">
-        <div className="padding-section-small">
-          <div className="padding-global">
-            <div className="container-large">
-              <div className="margin-bottom margin-large">
-                <div className="text-align-center-2">
-                  <div className="max-width-large align-center">
-                    <div className="heading-4 heading-style-h6">
-                      Nos clients sont des références internationales et ils ont
-                      opté pour notre logiciel de suivi de production en temps
-                      réel, optimisant ainsi leurs processus de fabrication et
-                      la gestion de leurs ressources.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="logos-component">
-            <div className="logos-list">
-              {clientLogos.firstRow.map((logo) => (
-                <div key={logo} className="logo-wrapper">
-                  <img
-                    src={`/images/${logo}.webp`}
-                    loading="lazy"
-                    alt={`logo ${logo}`}
-                    className="logo"
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="logos-list">
-              {clientLogos.secondRow.map((logo) => (
-                <div key={logo} className="logo-wrapper">
-                  <img
-                    src={`/images/${logo}.webp`}
-                    loading="lazy"
-                    alt={`logo ${logo}`}
-                    className="logo"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <img
-        src="/images/gray-bottom-shape.svg"
-        loading="lazy"
-        alt=""
-        className="bottom-gray-shape"
-      />
-
+      <main>
+      <ClientsSection clientLogos={clientLogos} />
       <FeaturesSection cards={cards} />
+      </main>
 
       <section className="section">
         <div className="padding-global">

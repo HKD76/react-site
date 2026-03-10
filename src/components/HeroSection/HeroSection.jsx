@@ -4,31 +4,19 @@ import "./HeroSection.css";
 export default function HeroSection() {
   return (
     <header className="hero-section">
-
       <div className="container">
-
         <div className="hero-content">
-
-          <h1>
-            Logiciel de gestion de production industrielle en temps réel
-          </h1>
+          <h1>Logiciel de gestion de production industrielle en temps réel</h1>
 
           <div className="hero-buttons">
-            <Link
-              to="/solution/logiciel-trs"
-              className="button"
-            >
+            <Link to="/solution/logiciel-trs" className="button">
               Solution complète de suivi
             </Link>
 
-            <Link
-              to="/demander-une-demo"
-              className="button secondary"
-            >
+            <Link to="/demander-une-demo" className="button secondary">
               Demander une démo
             </Link>
           </div>
-
         </div>
 
         <div className="hero-image">
@@ -38,9 +26,7 @@ export default function HeroSection() {
             loading="eager"
           />
         </div>
-
       </div>
-
     </header>
   );
 }
