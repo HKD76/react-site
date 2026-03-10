@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { clientLogos, featureCategories } from "../utils/homeUtils";
-import CardsSlider from "../components/CardsSlider/CardsSlider.jsx";
+import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
+
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -137,32 +138,7 @@ export default function Home() {
         className="bottom-gray-shape"
       />
 
-      <section className="section-logo light-teal">
-        <div className="padding-section-small">
-          <div className="padding-global">
-            <div className="container-large">
-              <div className="max-width-large text-align-center">
-                <div className="text-align-center padding-bottom padding-xlarge">
-                  <div className="margin-bottom margin-small">
-                    <h2 className="text-weight-light text-align-center max-width-700">
-                      <strong>Un suivi</strong> de production clair, fluide et <strong>100% en temps réel</strong>
-                    </h2>
-                  </div>
-                  <p className="text-size-medium-4">
-                    Mode industrie 4.0 enclenché avec une solution compatible
-                    ERP pour une gestion optimale.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="section-container">
-            <div className="features-slider">
-              <CardsSlider cards={cards} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeaturesSection cards={cards} />
 
       <section className="section">
         <div className="padding-global">
