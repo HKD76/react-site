@@ -54,13 +54,17 @@ const clientLogos = [
 export default function Home() {
   return (
     <>
-      <header>
-        <HeroSection />
-      </header>
-      <main>
-      <ClientsSection clientLogos={clientLogos} />
-      <FeaturesSection cards={cards} />
-      </main>
+      <div className="page-background">
+        <div className="page-container">
+          <header>
+            <HeroSection />
+          </header>
+          <main>
+            <ClientsSection clientLogos={clientLogos} />
+            <FeaturesSection cards={cards} />
+          </main>
+        </div>
+      </div>
 
       <section className="section">
         <div className="padding-global">

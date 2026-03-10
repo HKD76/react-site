@@ -4,7 +4,7 @@ import CardsSlider from "../CardsSlider/CardsSlider";
 export default function FeaturesSection({ cards }) {
   return (
     <section className="features-section">
-      <div className="container">
+      <div className="features-container">
 
         <div className="section-header">
           <h2>

@@ -1,3 +1,13 @@
+.page-background {
+  background-color: #f1f1f1; 
+  min-height: 100vh;
+}
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: Opensauceone;
   src: url('/fonts/OpenSauceOne-Bold.ttf') format('truetype');
