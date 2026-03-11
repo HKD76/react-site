@@ -5,6 +5,7 @@ import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 import AboutSection from "../components/AboutSection/AboutSection";
 import InstallationSection from "../components/InstallationSection/InstallationSection";
 import QualitySection from "../components/QualitySection/QualitySection";
+import SupportSection from "../components/SupportSection/SupportSection";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -70,51 +71,8 @@ export default function Home() {
         <AboutSection />
         <InstallationSection />
         <QualitySection />
+        <SupportSection />
       </div>
-
-      <section className="section">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-small">
-              <div className="w-layout-grid layout-component">
-                <div className="layout-card orange">
-                  <div className="layout-image-wrapper">
-                    <img
-                      src="/images/collaboration-graphic.png"
-                      loading="lazy"
-                      alt="collaboration interne"
-                      className="feature-image"
-                    />
-                  </div>
-                  <div className="layout-card-content">
-                    <div className="layout-card-content-top">
-                      <h2 className="heading-style-h3">
-                        Un dashboard multi-utilisateurs + support client
-                      </h2>
-                      <div className="margin-bottom margin-small">
-                        <div className="feature-highlight">
-                          <div className="heading-style-h4 green">
-                            Support dédié
-                          </div>
-                          <img
-                            src="/images/support.svg"
-                            loading="lazy"
-                            width="30"
-                            alt="picto support"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <Link to="/clients/cas-clients" className="button w-button">
-                      Ils nous font confiance
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="section-cta">
         <div className="section-cta-inner">

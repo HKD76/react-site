@@ -12,9 +12,11 @@ export default function InstallationSection() {
               production
             </h2>
             <p className="installation-text">
-              Installé en moins de 48h, RealTiMES collecte automatiquement vos données de production, calcule votre TRS en temps réel et s’intègre à vos systèmes existants. Une solution non intrusive qui améliore immédiatement la performance de vos lignes.
+              Installé en moins de 48h, RealTiMES collecte automatiquement vos
+              données de production, calcule votre TRS en temps réel et
+              s’intègre à vos systèmes existants. Une solution non intrusive qui
+              améliore immédiatement la performance de vos lignes.
             </p>
-
 
             <div className="installation-highlight">
               <span className="installation-highlight-title">Installation</span>

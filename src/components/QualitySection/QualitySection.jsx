@@ -18,7 +18,11 @@ export default function QualitySection() {
               Autocontrôles fréquentiels sur ligne via une tablette opérateur.
             </h2>
             <p className="quality-text">
-                Les opérateurs réalisent leurs autocontrôles directement sur tablette, ce qui fiabilise les contrôles, renforce la traçabilité et réduit les erreurs de saisie. Intégré au projet MES RealTiMES, ce module digitalise les routines qualité et améliore la réactivité sur ligne.
+              Les opérateurs réalisent leurs autocontrôles directement sur
+              tablette, ce qui fiabilise les contrôles, renforce la traçabilité
+              et réduit les erreurs de saisie. Intégré au projet MES RealTiMES,
+              ce module digitalise les routines qualité et améliore la
+              réactivité sur ligne.
             </p>
 
             <div className="quality-highlight">
