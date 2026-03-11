@@ -63,8 +63,10 @@ export default function Home() {
             <FeaturesSection cards={cards} />
           </main>
         </div>
-        <AboutSection />
       </div>
+        <div className="page-container">
+        <AboutSection />
+        </div>
 
       <section className="section">
         <div className="padding-global">
