@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import HeroSection from "../components/HeroSection/HeroSection";
 import ClientsSection from "../components/ClientsSection/ClientsSection";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
-// import cards from "../data/featuresCards";
-// import clientLogos from "../data/clientLogos";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
