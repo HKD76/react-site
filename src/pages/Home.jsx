@@ -6,6 +6,7 @@ import AboutSection from "../components/AboutSection/AboutSection";
 import InstallationSection from "../components/InstallationSection/InstallationSection";
 import QualitySection from "../components/QualitySection/QualitySection";
 import SupportSection from "../components/SupportSection/SupportSection";
+import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -73,45 +74,7 @@ export default function Home() {
         <QualitySection />
         <SupportSection />
       </div>
-
-      <section className="section-cta">
-        <div className="section-cta-inner">
-          <img
-            src="/images/call-to-action-top-shape.svg"
-            loading="lazy"
-            alt=""
-            className="call-to-action-top-shape"
-          />
-          <div className="section-cta-content">
-            <div className="padding-global">
-              <div className="container-large">
-                <div className="padding-section-medium">
-                  <div className="w-layout-grid call-to-action-component">
-                    <div className="call-to-action-content">
-                      <div className="margin-bottom margin-small">
-                        <div className="cta-info">
-                          <h3 className="heading-style-h3 text-color-white">
-                            Prenez rdv avec un ingénieur lean
-                          </h3>
-                          <p className="text-color-white max-width-small">
-                            Optimiser votre performance industrielle en boostant
-                            votre TRS.
-                          </p>
-                          <div className="button-group">
-                            <Link to="/tarif" className="button-25 w-button">
-                              Tester RealTiMES
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <CallToActionSection />
     </>
   );
 }
