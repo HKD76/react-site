@@ -4,6 +4,7 @@ import ClientsSection from "../components/ClientsSection/ClientsSection";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 import AboutSection from "../components/AboutSection/AboutSection";
 import InstallationSection from "../components/InstallationSection/InstallationSection";
+import QualitySection from "../components/QualitySection/QualitySection";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -68,55 +69,8 @@ export default function Home() {
       <div className="page-container">
         <AboutSection />
         <InstallationSection />
+        <QualitySection />
       </div>
-
-      <section className="section">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-small">
-              <div className="w-layout-grid layout-component">
-                <div className="layout-card pink">
-                  <div className="layout-image-wrapper">
-                    <img
-                      src="/images/Working-at-food-plant-1022298.webp"
-                      loading="lazy"
-                      alt="opérateur production tablette"
-                      className="feature-image"
-                    />
-                  </div>
-                  <div className="layout-card-content">
-                    <div className="layout-card-content-top">
-                      <h2 className="heading-style-h3">
-                        Autocontrôles fréquentiels sur ligne via une tablette
-                        opérateur.
-                      </h2>
-                      <div className="margin-bottom margin-small">
-                        <div className="feature-highlight">
-                          <div className="heading-style-h4 green">
-                            Contrôle qualité
-                          </div>
-                          <img
-                            src="/images/controle-qualite.svg"
-                            loading="lazy"
-                            width="50"
-                            alt="picto qualité"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <Link
-                      to="/solution/votre-projet-mes"
-                      className="button w-button"
-                    >
-                      Construire votre projet MES
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="padding-global">
