@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import ClientsSection from "../components/ClientsSection/ClientsSection";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
 import AboutSection from "../components/AboutSection/AboutSection";
+import InstallationSection from "../components/InstallationSection/InstallationSection";
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -64,57 +65,10 @@ export default function Home() {
           </main>
         </div>
       </div>
-        <div className="page-container">
+      <div className="page-container">
         <AboutSection />
-        </div>
-
-      <section className="section">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-small">
-              <div className="w-layout-grid layout-component">
-                <div className="layout-card green">
-                  <div className="layout-card-content">
-                    <div className="layout-card-content-top">
-                      <h2 className="heading-style-h3">
-                        <strong className="bold-text-2">RealTiMES</strong>{" "}
-                        s&apos;installe en 48h sur votre ligne de production
-                      </h2>
-                      <div className="margin-bottom margin-small">
-                        <div className="feature-highlight">
-                          <div className="heading-style-h4 green">
-                            Installation
-                          </div>
-                          <img
-                            src="/images/installation.svg"
-                            loading="lazy"
-                            width="30"
-                            alt="picto installation"
-                          />
-                        </div>
-                      </div>
-                      <Link
-                        to="/solution/logiciel-trs"
-                        className="button w-button"
-                      >
-                        Logiciel TRS/MES personnalisable
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="layout-image-wrapper">
-                    <img
-                      src="/images/suivi-trs-production.webp"
-                      loading="lazy"
-                      alt="QR codes arrêts machine"
-                      className="feature-image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <InstallationSection />
+      </div>
 
       <section className="section">
         <div className="padding-global">

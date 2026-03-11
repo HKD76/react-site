@@ -16,7 +16,7 @@ export default function CardsSlider({ cards }) {
       breakpoints={{
         0: { slidesPerView: 1 },
         700: { slidesPerView: 2 },
-        1100: { slidesPerView: 3 }
+        1100: { slidesPerView: 3 },
       }}
     >
       {cards.map((card, index) => (

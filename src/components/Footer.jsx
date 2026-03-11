@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -10,27 +10,68 @@ export default function Footer() {
               <div className="w-layout-grid footer-top-wrapper">
                 <div className="footer-left-wrapper text-color-white">
                   <div className="margin-bottom margin-medium">
-                    <Link to="/" aria-label="accueil realtimes" className="footer3-logo-link w-nav-brand">
-                      <img src="/images/reproduction-logo-white.svg" loading="lazy" alt="" width="136" className="image" />
+                    <Link
+                      to="/"
+                      aria-label="accueil realtimes"
+                      className="footer3-logo-link w-nav-brand"
+                    >
+                      <img
+                        src="/images/reproduction-logo-white.svg"
+                        loading="lazy"
+                        alt=""
+                        width="136"
+                        className="image"
+                      />
                     </Link>
-                    <div className="text-block-10">Expert du suivi de production et de la performance industrielle</div>
+                    <div className="text-block-10">
+                      Expert du suivi de production et de la performance
+                      industrielle
+                    </div>
                   </div>
                   <div className="margin-bottom margin-medium">
                     <div className="text-size-small">
-                      <span className="text-weight-semibold footer">Adresse</span>
-                      <br />10 a rue du Maréchal de Lattre de Tassigny<br />76420 BIHOREL
+                      <span className="text-weight-semibold footer">
+                        Adresse
+                      </span>
                       <br />
-                      <a href="mailto:contact@realtimes.fr" className="link-2">contact@realtimes.fr</a>
+                      10 a rue du Maréchal de Lattre de Tassigny
+                      <br />
+                      76420 BIHOREL
+                      <br />
+                      <a href="mailto:contact@realtimes.fr" className="link-2">
+                        contact@realtimes.fr
+                      </a>
                     </div>
                     <a href="tel:+33255420289" className="w-inline-block">
-                      <div className="text-block-15"><strong><em>02 55 42 02 89</em></strong></div>
+                      <div className="text-block-15">
+                        <strong>
+                          <em>02 55 42 02 89</em>
+                        </strong>
+                      </div>
                     </a>
                   </div>
                   <div className="w-layout-grid footer-social-list">
-                    <a aria-label="lien page linkedin" href="https://www.linkedin.com/company/realtimes-france" target="_blank" rel="noreferrer" className="footer-social-link w-inline-block">
+                    <a
+                      aria-label="lien page linkedin"
+                      href="https://www.linkedin.com/company/realtimes-france"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="footer-social-link w-inline-block"
+                    >
                       <div className="social-icon w-embed">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fillRule="evenodd" clipRule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="CurrentColor" />
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z"
+                            fill="CurrentColor"
+                          />
                         </svg>
                       </div>
                     </a>
@@ -38,17 +79,41 @@ export default function Footer() {
                 </div>
                 <div className="w-layout-grid footer-menu-wrapper text-color-white">
                   <div className="footer-link-list">
-                    <Link to="/demander-une-demo" className="footer-link">Démo RealTiMES</Link>
-                    <Link to="/solution/a-propos-de-realtimes" className="footer-link">À propos</Link>
-                    <Link to="/ressources/blog" className="footer-link">Blog</Link>
-                    <Link to="/ressources/ebook" className="footer-link">E-Book</Link>
-                    <Link to="/contact" className="footer-link">Contact</Link>
+                    <Link to="/demander-une-demo" className="footer-link">
+                      Démo RealTiMES
+                    </Link>
+                    <Link
+                      to="/solution/a-propos-de-realtimes"
+                      className="footer-link"
+                    >
+                      À propos
+                    </Link>
+                    <Link to="/ressources/blog" className="footer-link">
+                      Blog
+                    </Link>
+                    <Link to="/ressources/ebook" className="footer-link">
+                      E-Book
+                    </Link>
+                    <Link to="/contact" className="footer-link">
+                      Contact
+                    </Link>
                   </div>
                   <div className="footer-link-list">
-                    <Link to="/solution/logiciel-trs" className="footer-link">Avantages de la solution TRS/MES</Link>
-                    <Link to="/solution/votre-projet-mes" className="footer-link">Votre Projet MES</Link>
-                    <Link to="/tarif" className="footer-link">Tarif</Link>
-                    <Link to="/" className="footer-link">RealTiMES</Link>
+                    <Link to="/solution/logiciel-trs" className="footer-link">
+                      Avantages de la solution TRS/MES
+                    </Link>
+                    <Link
+                      to="/solution/votre-projet-mes"
+                      className="footer-link"
+                    >
+                      Votre Projet MES
+                    </Link>
+                    <Link to="/tarif" className="footer-link">
+                      Tarif
+                    </Link>
+                    <Link to="/" className="footer-link">
+                      RealTiMES
+                    </Link>
                   </div>
                   <div className="footer-link-list"></div>
                 </div>
@@ -58,10 +123,24 @@ export default function Footer() {
             <div className="padding-top padding-medium text-color-white">
               <div className="footer-bottom-wrapper">
                 <div className="footer-credit-text">© 2024 RealTiMES</div>
-                <div className="footer-credit-text">Fait avec 💚 par <a href="https://www.maxime-omont.fr/" target="_blank" rel="noreferrer" className="link-4">MO-COMMUNICANT</a></div>
+                <div className="footer-credit-text">
+                  Fait avec 💚 par{" "}
+                  <a
+                    href="https://www.maxime-omont.fr/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link-4"
+                  >
+                    MO-COMMUNICANT
+                  </a>
+                </div>
                 <div className="w-layout-grid footer3-legal-list">
-                  <Link to="/mentions-legales" className="footer-legal-link">Mentions légales</Link>
-                  <Link to="/rgpd" className="footer-legal-link">RGPD</Link>
+                  <Link to="/mentions-legales" className="footer-legal-link">
+                    Mentions légales
+                  </Link>
+                  <Link to="/rgpd" className="footer-legal-link">
+                    RGPD
+                  </Link>
                 </div>
               </div>
             </div>
@@ -69,5 +148,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  )
+  );
 }

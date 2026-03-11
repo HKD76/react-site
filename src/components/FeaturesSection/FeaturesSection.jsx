@@ -1,11 +1,10 @@
-import './FeaturesSection.css';
+import "./FeaturesSection.css";
 import CardsSlider from "../CardsSlider/CardsSlider";
 
 export default function FeaturesSection({ cards }) {
   return (
     <section className="features-section">
       <div className="features-container">
-
         <div className="section-header">
           <h2>
             <strong>Un suivi</strong> de production clair, fluide et
@@ -13,15 +12,14 @@ export default function FeaturesSection({ cards }) {
           </h2>
 
           <p>
-            Mode industrie 4.0 enclenché avec une solution compatible ERP
-            pour une gestion optimale.
+            Mode industrie 4.0 enclenché avec une solution compatible ERP pour
+            une gestion optimale.
           </p>
         </div>
 
         <div className="features-slider">
           <CardsSlider cards={cards} />
         </div>
-
       </div>
     </section>
   );
