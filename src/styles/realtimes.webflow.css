@@ -9,6 +9,11 @@
   padding: 0 24px;
   box-sizing: border-box;
 }
+.button {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
 @font-face {
   font-family: Opensauceone;
   src: url('/fonts/OpenSauceOne-Bold.ttf') format('truetype');

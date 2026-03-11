@@ -48,9 +48,6 @@
   width: 100%;
   border-radius: 12px;
 }
-.button {
-  text-decoration: none;
-}
 @media (max-width: 992px) {
   .quality-card {
     grid-template-columns: 1fr;
