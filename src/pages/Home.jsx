@@ -7,6 +7,8 @@ import InstallationSection from "../components/InstallationSection/InstallationS
 import QualitySection from "../components/QualitySection/QualitySection";
 import SupportSection from "../components/SupportSection/SupportSection";
 import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
+import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+
 const cards = [
   {
     icon: <img src="/images/installation.svg" alt="Installation" />,
@@ -74,6 +76,7 @@ export default function Home() {
         <QualitySection />
         <SupportSection />
       </div>
+      <TestimonialSection />
       <CallToActionSection />
     </>
   );

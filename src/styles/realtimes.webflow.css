@@ -1260,10 +1260,10 @@ li {
   padding-left: .5rem;
 }
 
-img {
+/* img {
   max-width: 100%;
   display: inline-block;
-}
+} */
 
 label {
   margin-bottom: .25rem;
@@ -3506,13 +3506,13 @@ figcaption {
   display: flex;
 }
 
-.testimonial-client {
+/* .testimonial-client {
   grid-column-gap: 14px;
   text-align: left;
   justify-content: space-between;
   align-items: center;
   display: flex;
-}
+} */
 
 .testimonial-author-avatar {
   max-height: 5rem;
@@ -6107,10 +6107,10 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-client {
+  /* .testimonial-client {
     align-items: center;
     width: 100%;
-  }
+  } */
 
   .testimonial15-arrow {
     inset: 0% 0% auto auto;

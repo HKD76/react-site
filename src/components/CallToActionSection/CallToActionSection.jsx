@@ -6,7 +6,7 @@ export default function CallToActionSection() {
     <section className="cta-section">
       <img
         src="/images/call-to-action-top-shape.svg"
-        alt=""
+        alt="CTA Top Shape"
         className="cta-top-shape"
       />
       <div className="cta-background">
