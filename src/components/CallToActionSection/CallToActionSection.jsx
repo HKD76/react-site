@@ -18,7 +18,7 @@ export default function CallToActionSection() {
               Optimiser votre performance industrielle en boostant votre TRS.
             </p>
 
-            <Link to="/tarif" className="cta-button button">
+            <Link to="/tarif" className="button">
               Tester RealTiMES
             </Link>
           </div>

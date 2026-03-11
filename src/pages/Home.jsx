@@ -74,7 +74,7 @@ export default function Home() {
         <QualitySection />
         <SupportSection />
       </div>
-        <CallToActionSection />
+      <CallToActionSection />
     </>
   );
 }
