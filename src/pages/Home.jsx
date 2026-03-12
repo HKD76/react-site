@@ -10,6 +10,7 @@ import CallToActionSection from "../components/CallToActionSection/CallToActionS
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import DescriptionSection from "../components/DescriptionSection/DescriptionSection";
 import StatsSection from "../components/StatsSection/StatsSection";
+import TrySection from "../components/TrySection/TrySection";
 
 const cards = [
   {
@@ -82,6 +83,7 @@ export default function Home() {
       <div className="page-container">
         <DescriptionSection />
         <StatsSection />
+        <TrySection />
       </div>
       <CallToActionSection />
     </>
