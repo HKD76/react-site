@@ -8,8 +8,7 @@ export default function AboutSection() {
         <div className="about-card">
           <div className="about-content">
             <h2>
-              <span className="highlight">RealTiMES</span> est un logiciel de suivi de production en temps réel qui
-              aide les industriels à améliorer leur TRS.
+              <span className="highlight">RealTiMES</span> est un logiciel de suivi de production en temps réel qui améliore le TRS des industriels.
             </h2>
 
             <p className="about-text">

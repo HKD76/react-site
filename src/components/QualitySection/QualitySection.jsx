@@ -15,7 +15,7 @@ export default function QualitySection() {
 
           <div className="quality-content">
             <h2>
-              Autocontrôles fréquentiels sur ligne via une tablette opérateur.
+              <span className='highlight'>Autocontrôles</span> fréquentiels sur ligne via une tablette opérateur.
             </h2>
             <p className="quality-text">
               Les opérateurs réalisent leurs autocontrôles directement sur

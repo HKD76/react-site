@@ -14,7 +14,7 @@ export default function SupportSection() {
           </div>
 
           <div className="support-content">
-            <h2>Un dashboard multi-utilisateurs + support client</h2>
+            <h2><span className='highlight'>Un dashboard</span> multi-utilisateurs + support client</h2>
             <p className="support-text">
               Le dashboard RealTiMES centralise les indicateurs clés pour tous
               les profils, du terrain à la direction. Associé à un support

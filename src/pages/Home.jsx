@@ -9,6 +9,7 @@ import SupportSection from "../components/SupportSection/SupportSection";
 import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import DescriptionSection from "../components/DescriptionSection/DescriptionSection";
+import StatsSection from "../components/StatsSection/StatsSection";
 
 const cards = [
   {
@@ -80,8 +81,8 @@ export default function Home() {
       <TestimonialSection />
       <div className="page-container">
         <DescriptionSection />
+        <StatsSection />
       </div>
-      {/* <StatsSection /> */}
       <CallToActionSection />
     </>
   );
