@@ -166,7 +166,7 @@
   .nav-list {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     justify-content: space-around;
     margin: 0;
@@ -180,7 +180,7 @@
   }
 
   .btn-demo {
-    width: auto;
+    display: none;
   }
 
   .mobile-toggle {
