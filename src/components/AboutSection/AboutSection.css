@@ -4,6 +4,10 @@
   border-radius: 14px;
   margin-top: 40px;
 }
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
 
 .about-card {
   display: grid;
@@ -23,9 +27,25 @@
   color: #555;
   margin-bottom: 24px;
 }
+.about-button {
+  text-decoration: none;
+  align-self: center;
+  width: 60%;
+  display: inline-block;
+  border: 1px none var(--black);
+  background-color: var(--t-colors--brand);
+  color: #fff;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
 
 .about-highlight {
   display: flex;
+  align-self: center;
   align-items: center;
   gap: 10px;
   margin-bottom: 24px;
@@ -62,9 +82,8 @@
 
   .about-image {
     margin-top: 30px;
-  max-width: 500px;
-  width: 100%;
-  margin: auto;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
   }
-  
 }

@@ -30,6 +30,7 @@
 
 .quality-highlight {
   display: flex;
+  align-self: center;
   align-items: center;
   gap: 10px;
   margin-bottom: 24px;
