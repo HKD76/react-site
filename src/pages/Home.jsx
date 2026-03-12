@@ -11,6 +11,7 @@ import TestimonialSection from "../components/TestimonialSection/TestimonialSect
 import DescriptionSection from "../components/DescriptionSection/DescriptionSection";
 import StatsSection from "../components/StatsSection/StatsSection";
 import TrySection from "../components/TrySection/TrySection";
+import { clientLogos } from "../data/clientsLogos";
 
 const cards = [
   {
@@ -49,15 +50,7 @@ const cards = [
     text: "Amélioration du TRS, réduction des arrêts et ROI inférieur à 12 mois.",
   },
 ];
-const clientLogos = [
-  { src: "/images/panzani.webp", alt: "Panzani" },
-  { src: "/images/lactalis.webp", alt: "Lactalis" },
-  { src: "/images/knauf.webp", alt: "Knauf" },
-  { src: "/images/laitiere.webp", alt: "Laitiere" },
-  { src: "/images/plastic-omnium.webp", alt: "Pastic-Omnium" },
-  { src: "/images/ldc.webp", alt: "LDC" },
-  { src: "/images/msd-logo.webp", alt: "MSD" },
-];
+
 
 export default function Home() {
   return (

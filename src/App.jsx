@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import PlaceholderPage from './pages/PlaceholderPage'
 import NotFound from './pages/NotFound'
+import AboutPage from './pages/AboutPage'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="demander-une-demo" element={<PlaceholderPage />} />
           <Route path="mentions-legales" element={<PlaceholderPage />} />
           <Route path="rgpd" element={<PlaceholderPage />} />
-          <Route path="solution/a-propos-de-realtimes" element={<PlaceholderPage />} />
+          <Route path="solution/a-propos-de-realtimes" element={<AboutPage />} />
           <Route path="solution/logiciel-trs" element={<PlaceholderPage />} />
           <Route path="solution/votre-projet-mes" element={<PlaceholderPage />} />
           <Route path="ressources/blog" element={<PlaceholderPage />} />
