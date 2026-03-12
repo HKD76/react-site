@@ -2,7 +2,7 @@
   position: relative;
   color: white;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .cta-top-shape {
@@ -30,7 +30,7 @@
 }
 
 .cta-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 24px;
 }
 
