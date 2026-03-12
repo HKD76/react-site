@@ -25,7 +25,7 @@ export default function AboutSection() {
               <img src="/images/data.svg" alt="picto data" />
             </div>
 
-            <Link to="/solution/a-propos-de-realtimes" className="about-button">
+            <Link to="/solution/a-propos-de-realtimes" className="card-button">
               La solution de suivi RealTiMES
             </Link>
           </div>

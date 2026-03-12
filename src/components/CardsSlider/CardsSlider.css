@@ -7,18 +7,7 @@
   margin: 20px auto;
   padding: 0 12px;
 }
-.swiper {
-  padding: 35px 0 35px 0;
-  padding-left: 8px;
-  padding-right: 8px;
-}
 
-.swiper-slide {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  padding: 0 6px;
-}
 .slider-card {
   background: white;
   border-radius: 16px;

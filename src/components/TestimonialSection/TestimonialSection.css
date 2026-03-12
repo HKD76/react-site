@@ -50,21 +50,6 @@
   margin: 0 auto;
   width: 100%;
 }
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-.swiper-pagination {
-  margin-top: 30px;
-}
-.swiper-pagination-bullet {
-  background: white;
-  opacity: 0.5;
-}
-.swiper-pagination-bullet-active {
-  background: white;
-  opacity: 1;
-}
 .testimonial-info {
   align-items: center;
   margin-top: 20px;
@@ -83,7 +68,7 @@
     font-size: 0.8rem;
   }
   .testimonial-name {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .star img {
     width: 16px;

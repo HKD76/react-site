@@ -32,7 +32,7 @@ export default function QualitySection() {
               <img src="/images/controle-qualite.svg" alt="picto qualité" />
             </div>
 
-            <Link to="/solution/votre-projet-mes" className="button">
+            <Link to="/solution/votre-projet-mes" className="card-button">
               Construire votre projet MES
             </Link>
           </div>

@@ -24,7 +24,7 @@ export default function InstallationSection() {
               <img src="/images/installation.svg" alt="picto installation" />
             </div>
 
-            <Link to="/solution/logiciel-trs" className="button">
+            <Link to="/solution/logiciel-trs" className="card-button">
               Logiciel TRS/MES personnalisable
             </Link>
           </div>

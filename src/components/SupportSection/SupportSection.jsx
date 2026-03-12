@@ -27,7 +27,7 @@ export default function SupportSection() {
               <img src="/images/support.svg" alt="picto support" />
             </div>
 
-            <Link to="/clients/cas-clients" className="button">
+            <Link to="/clients/cas-clients" className="card-button">
               Ils nous font confiance
             </Link>
           </div>
