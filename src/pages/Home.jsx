@@ -8,6 +8,7 @@ import QualitySection from "../components/QualitySection/QualitySection";
 import SupportSection from "../components/SupportSection/SupportSection";
 import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+import DescriptionSection from "../components/DescriptionSection/DescriptionSection";
 
 const cards = [
   {
@@ -77,6 +78,10 @@ export default function Home() {
         <SupportSection />
       </div>
       <TestimonialSection />
+      <div className="page-container">
+        <DescriptionSection />
+      </div>
+      {/* <StatsSection /> */}
       <CallToActionSection />
     </>
   );

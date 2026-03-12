@@ -14,6 +14,9 @@
   width: 100%;
   display: inline-block;
 }
+.highlight{
+  font-weight: bold;
+}
 @font-face {
   font-family: Opensauceone;
   src: url('/fonts/OpenSauceOne-Bold.ttf') format('truetype');

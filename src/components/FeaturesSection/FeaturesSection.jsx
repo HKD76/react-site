@@ -7,8 +7,9 @@ export default function FeaturesSection({ cards }) {
       <div className="features-container">
         <div className="section-header">
           <h2>
-            <strong>Un suivi</strong> de production clair, fluide et
-            <strong> 100% en temps réel</strong>
+            <span className="highlight">Un suivi</span> de production clair,
+            fluide et
+            <span className="highlight"> 100% en temps réel</span>
           </h2>
 
           <p>

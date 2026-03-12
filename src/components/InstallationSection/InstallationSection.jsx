@@ -8,7 +8,7 @@ export default function InstallationSection() {
         <div className="installation-card">
           <div className="installation-content">
             <h2>
-              <strong>RealTiMES</strong> s’installe en 48h sur votre ligne de
+              <span className="highlight">RealTiMES</span> s’installe en 48h sur votre ligne de
               production
             </h2>
             <p className="installation-text">
