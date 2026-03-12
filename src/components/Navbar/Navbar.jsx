@@ -33,10 +33,19 @@ export default function Navbar() {
 
         <nav className={`nav ${mobileOpen ? "open" : ""}`}>
           <ul className="nav-list">
-            <li className="dropdown">
-              <button onClick={() => toggleDropdown("solution")}>
-                Solution
+            <li
+              className={`dropdown ${openDropdown === "solution" ? "open" : ""}`}
+            >
+              <button
+                className="dropdown-toggle"
+                onClick={() => toggleDropdown("solution")}
+              >
+                <span>Solution</span>
+                <div className="dropdown-arrow">
+                  <img src="/images/arrow.svg" alt="" />
+                </div>
               </button>
+
               <ul
                 className={`dropdown-menu ${openDropdown === "solution" ? "show" : ""}`}
               >
@@ -51,9 +60,17 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-            <li className="dropdown">
-              <button onClick={() => toggleDropdown("ressources")}>
-                Ressources
+            <li
+              className={`dropdown ${openDropdown === "ressources" ? "open" : ""}`}
+            >
+              <button
+                className="dropdown-toggle"
+                onClick={() => toggleDropdown("ressources")}
+              >
+                <span>Ressources</span>
+                <div className="dropdown-arrow">
+                  <img src="/images/arrow.svg" alt="" />
+                </div>
               </button>
               <ul
                 className={`dropdown-menu ${openDropdown === "ressources" ? "show" : ""}`}
