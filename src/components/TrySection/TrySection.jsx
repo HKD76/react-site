@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./TrySection.css";
 
 export default function TrySection() {
@@ -16,9 +17,9 @@ export default function TrySection() {
           <p className="try-description">
             Demandez votre démo pour un aperçu réel
           </p>
-          <a href="/contact" className="try-button">
+          <Link to="/demander-une-demo" className="try-button">
             Demander une démo
-          </a>
+          </Link>
         </div>
       </div>
     </section>
