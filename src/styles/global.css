@@ -216,6 +216,9 @@ body {
   font-weight: 500;
   transition: background-color 0.25s;
 }
+.button:hover {
+  background-color: #333;
+}
 .card-button {
   text-decoration: none;
   align-self: center;
@@ -230,6 +233,9 @@ body {
   font-family: Opensauceone, sans-serif;
   font-weight: 500;
   transition: background-color 0.25s;
+}
+.card-button:hover {
+  background-color: #333;
 }
 .highlight {
   font-weight: bold;
