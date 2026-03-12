@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import HeroSection from "../components/HeroSection/HeroSection";
-import ClientsSection from "../components/ClientsSection/ClientsSection";
-import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
-import AboutSection from "../components/AboutSection/AboutSection";
-import InstallationSection from "../components/InstallationSection/InstallationSection";
-import QualitySection from "../components/QualitySection/QualitySection";
-import SupportSection from "../components/SupportSection/SupportSection";
-import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
-import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
-import DescriptionSection from "../components/DescriptionSection/DescriptionSection";
-import StatsSection from "../components/StatsSection/StatsSection";
-import TrySection from "../components/TrySection/TrySection";
-import { clientLogos } from "../data/clientsLogos";
+import HeroSection from "./components/HeroSection/HeroSection";
+import ClientsSection from "./components/ClientsSection/ClientsSection";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
+import AboutSection from "./components/AboutSection/AboutSection";
+import InstallationSection from "./components/InstallationSection/InstallationSection";
+import QualitySection from "./components/QualitySection/QualitySection";
+import SupportSection from "./components/SupportSection/SupportSection";
+import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
+import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
+import DescriptionSection from "../../components/DescriptionSection/DescriptionSection";
+import StatsSection from "../../components/StatsSection/StatsSection";
+import TrySection from "./components/TrySection/TrySection";
+import { clientLogos } from "../../data/clientsLogos";
 
 const cards = [
   {
@@ -60,10 +60,10 @@ export default function Home() {
           <header>
             <HeroSection />
           </header>
-          <main>
+          <div>
             <ClientsSection clientLogos={clientLogos} />
             <FeaturesSection cards={cards} />
-          </main>
+          </div>
         </div>
       </div>
       <div className="page-container">

@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 import PlaceholderPage from './pages/PlaceholderPage'
 import NotFound from './pages/NotFound'
-import AboutPage from './pages/AboutPage'
+import AboutPage from './pages/AboutPage/AboutPage'
 
 function App() {
   return (

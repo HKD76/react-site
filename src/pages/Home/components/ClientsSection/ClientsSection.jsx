@@ -1,5 +1,5 @@
 import "./ClientsSection.css";
-import ClientsSlider from "./ClientsSlider/ClientsSlider.jsx";
+import ClientsSlider from "../../../../components/ClientsSlider/ClientsSlider.jsx";
 
 export default function ClientsSection({ clientLogos }) {
   return (
