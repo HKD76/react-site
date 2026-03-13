@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import PlaceholderPage from './pages/PlaceholderPage'
 import NotFound from './pages/NotFound'
 import AboutPage from './pages/AboutPage/AboutPage'
+import TestimonialPage from './pages/TestimonialPage/TestimonialPage'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="ressources/blog" element={<PlaceholderPage />} />
           <Route path="ressources/ebook" element={<PlaceholderPage />} />
           <Route path="ressources/media" element={<PlaceholderPage />} />
-          <Route path="clients/temoignages" element={<PlaceholderPage />} />
+          <Route path="clients/temoignages" element={<TestimonialPage />} />
           <Route path="clients/cas-clients" element={<PlaceholderPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />

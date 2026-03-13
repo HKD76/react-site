@@ -214,6 +214,27 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
+.title {
+  background: linear-gradient(90deg, black 0%, #6fc400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 80px 0;
+  margin : unset;
+}
+.page-subtitle{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
 .button {
   text-decoration: none;
   width: 60%;
@@ -278,7 +299,6 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 36px;
-  margin-top: 20px;
 }
 h3 {
   font-size: 24px;

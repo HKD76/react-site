@@ -5,9 +5,9 @@ export default function AboutHero() {
         <section className="about-hero">
             <div className="about-hero-container">
                 <div className="about-hero-square">
-                    <div className="about-hero-title">
+                    <div className="title">
                         <h2>La solution pour votre <span className="highlight">suivi de production industrielle</span> </h2>
-                        <p>Tout savoir sur <span className="highlight">RealTiMES</span></p>
+                        <p className="page-subtitle">Tout savoir sur <span className="highlight">RealTiMES</span></p>
                     </div>
                 </div>
                 <div className="about-hero-square">

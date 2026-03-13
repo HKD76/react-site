@@ -23,18 +23,6 @@
   height: auto;
   display: block;
 }
-
-.about-hero-title {
-  background: linear-gradient(90deg, black 0%, #6fc400 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
 .about-hero-text {
   text-align: center;
   margin-top: 80px;
