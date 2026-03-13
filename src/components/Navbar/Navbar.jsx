@@ -86,8 +86,28 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link to="/clients">Clients</Link>
+            <li
+              className={`dropdown ${openDropdown === "clients" ? "open" : ""}`}
+            >
+              <button
+                className="dropdown-toggle"
+                onClick={() => toggleDropdown("clients")}
+              >
+                <span>Clients</span>
+                <div className="dropdown-arrow">
+                  <img src="/images/arrow.svg" alt="" />
+                </div>
+              </button>
+              <ul
+                className={`dropdown-menu ${openDropdown === "clients" ? "show" : ""}`}
+              >
+                <li>
+                  <Link to="/clients/temoignages">Témoignages</Link>
+                </li>
+                <li>
+                  <Link to="/clients/cas-clients">Cas clients</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/tarif">Tarif</Link>
