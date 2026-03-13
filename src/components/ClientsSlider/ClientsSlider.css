@@ -1,0 +1,18 @@
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-height: 60px;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+

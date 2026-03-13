@@ -1,0 +1,33 @@
+.about-hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+}
+.about-hero-content h2 {
+  padding:40px 0;
+}
+.about-hero-square {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-hero-square:nth-child(1),
+.about-hero-square:nth-child(2) {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-hero-square:nth-child(3),
+.about-square:nth-child(4) {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-hero-square img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about-hero-text {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.2rem;
+}

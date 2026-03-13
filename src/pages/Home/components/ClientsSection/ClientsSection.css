@@ -1,0 +1,19 @@
+.clients-section {
+  position: relative;
+  background: #f1f1f1;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.clients-text {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  font-size: 20px;
+  line-height: 1.8;
+}

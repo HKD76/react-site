@@ -1,0 +1,24 @@
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 35px 0 35px 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 6px;
+}
+.swiper-pagination {
+  margin-top: 30px;
+}
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
