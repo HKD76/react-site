@@ -1,5 +1,6 @@
 import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
+import TestimonialAptar from "./components/TestimonialAptar/TestimonialAptar";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function TestimonialPage() {
@@ -15,8 +16,12 @@ export default function TestimonialPage() {
             simple
           </p>
         </div>
-      </div>
       <ClientsSlider logos={clientLogos} />
+      </div>
+      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <div className="page-container">
+        <TestimonialAptar />
+      </div>
       <CallToActionSection />
     </section>
   );
