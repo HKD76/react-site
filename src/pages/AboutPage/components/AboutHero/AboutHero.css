@@ -2,8 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 40px 0;
 }
-
+.about-hero-content h2 {
+  padding:40px 0;
+}
 .about-hero-square {
   flex: 1 1 calc(50% - 20px);
 }
