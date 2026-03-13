@@ -3,6 +3,7 @@ import StatsSection from "../../components/StatsSection/StatsSection";
 import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
 import AboutHero from "./components/AboutHero/AboutHero";
 import StorySection from "./components/StorySection/StorySection";
+import AboutBusiness from "./components/AboutBusiness/AboutBusiness";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function AboutPage() {
@@ -17,6 +18,14 @@ export default function AboutPage() {
       <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
         <StorySection />
+      </div>
+      <div className="page-background-black">
+        <div className="page-container">
+          <AboutBusiness />
+        </div>
+      </div>
+      <div className="page-container">
+        
       </div>
       <StatsSection />
       <CallToActionSection />

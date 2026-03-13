@@ -10,7 +10,7 @@ export default function StorySection() {
           <p className="story-text">
             Depuis 2006 nous proposons aux industriels, une solution de suivi de
             production en temps réel, à la fois simple à mettre en œuvre et
-            performante : RealTiMES
+            performante : <span className="highlight">RealTiMES</span>
           </p>
           <p className="story-text">
             Améliorer la performance de vos machines de production en mettant en
@@ -21,7 +21,10 @@ export default function StorySection() {
           </p>
         </div>
         <div className="story-image">
-            <img src="/images/Dashboard-realtimes-vecto-p-1080.webp" alt="Dashboard" />
+          <img
+            src="/images/Dashboard-realtimes-vecto-p-1080.webp"
+            alt="Dashboard"
+          />
         </div>
       </div>
     </section>

@@ -196,6 +196,12 @@ body {
   background-color: #f1f1f1;
   min-height: 100vh;
 }
+.page-background-black {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
