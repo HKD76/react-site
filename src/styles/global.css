@@ -194,13 +194,20 @@ body {
 }
 .page-background {
   background-color: #f1f1f1;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .page-background-black {
   background-color: #000;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+}
+.page-background-grey {
+  background-color: var(--light-grey);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 .page-container {
   max-width: 1200px;
