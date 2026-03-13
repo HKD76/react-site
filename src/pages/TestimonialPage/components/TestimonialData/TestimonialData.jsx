@@ -1,14 +1,16 @@
+import "./TestimonialData.css";
+
 export default function TestimonialData() {
   return (
     <section className="testimonial-data">
       <div className="testimonial-data-container">
         <div className="testimonial-data-content">
           <h2 className="testimonial-data-title">
-            La mesure de la performance, accessible partout dans le monde
+            La <span className="highlight">mesure</span> de la <span className="highlight">performance</span>, accessible partout dans le monde
           </h2>
           <p className="testimonial-data-text">
-            Notre logiciel TRS/MES s'intègre à votre ERP existant et est fourni
-            avec un module de captation des arrêts (RTBOX). L'analyse des arrêts
+            Notre logiciel <span className="highlight">TRS/MES</span> s'intègre à votre ERP existant et est fourni
+            avec un module de captation des arrêts (<span className="highlight">RTBOX</span>). L'analyse des arrêts
             machine permet une gestion efficace des rebuts et une disponibilité
             accrue des équipements.
           </p>
@@ -18,7 +20,7 @@ export default function TestimonialData() {
             production, de valeurs physiques ou d’un ensemble de tâches
             manuelles. L'utilisation de logiciels avancés facilite la collecte
             et l'interprétation des données de production. Avec une analyse
-            basée sur des données hebergées sur votre serveur, RealTiMES peut
+            basée sur des données hebergées sur votre serveur, <span className="highlight">RealTiMES</span> peut
             fournir des recommandations intelligentes pour optimiser vos
             processus de production.
           </p>
