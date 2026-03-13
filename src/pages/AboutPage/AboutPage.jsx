@@ -6,6 +6,7 @@ import AboutStory from "./components/AboutStory/AboutStory";
 import AboutBusiness from "./components/AboutBusiness/AboutBusiness";
 import AboutDashboard from "./components/AboutDashboard/AboutDashboard";
 import AboutReliability from "./components/AboutReliability/AboutReliability";
+import AboutData from "./components/AboutData/AboutData";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function AboutPage() {
@@ -33,6 +34,9 @@ export default function AboutPage() {
         <div className="page-container">
           <AboutReliability />
         </div>
+      </div>
+      <div className="page-container">
+        <AboutData />
       </div>
       <StatsSection />
       <CallToActionSection />
