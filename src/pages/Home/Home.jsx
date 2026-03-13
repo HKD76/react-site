@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ClientsSection from "./components/ClientsSection/ClientsSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
-import AboutSection from "./components/AboutSection/AboutSection";
+import DataSection from "./components/DataSection/DataSection";
 import InstallationSection from "./components/InstallationSection/InstallationSection";
 import QualitySection from "./components/QualitySection/QualitySection";
 import SupportSection from "./components/SupportSection/SupportSection";
@@ -12,6 +12,7 @@ import DescriptionSection from "../../components/DescriptionSection/DescriptionS
 import StatsSection from "../../components/StatsSection/StatsSection";
 import TrySection from "./components/TrySection/TrySection";
 import { clientLogos } from "../../data/clientsLogos";
+import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 
 const cards = [
   {
@@ -51,7 +52,6 @@ const cards = [
   },
 ];
 
-
 export default function Home() {
   return (
     <>
@@ -65,9 +65,11 @@ export default function Home() {
             <FeaturesSection cards={cards} />
           </div>
         </div>
+        <ClientsSlider logos={clientLogos} />
       </div>
+      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
-        <AboutSection />
+        <DataSection />
         <InstallationSection />
         <QualitySection />
         <SupportSection />

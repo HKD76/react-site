@@ -1,5 +1,4 @@
 import "./ClientsSection.css";
-import ClientsSlider from "../../../../components/ClientsSlider/ClientsSlider.jsx";
 
 export default function ClientsSection({ clientLogos }) {
   return (
@@ -14,7 +13,7 @@ export default function ClientsSection({ clientLogos }) {
           </p>
         </div>
 
-        <ClientsSlider logos={clientLogos} />
+        
       </div>
     </section>
   );

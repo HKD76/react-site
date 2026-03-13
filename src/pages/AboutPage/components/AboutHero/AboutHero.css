@@ -1,0 +1,37 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-square {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-square:nth-child(1),
+.about-square:nth-child(2) {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-square:nth-child(3),
+.about-square:nth-child(4) {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.about-square img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about-text {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.2rem;
+}
