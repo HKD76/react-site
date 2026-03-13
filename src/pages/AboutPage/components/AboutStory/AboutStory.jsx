@@ -1,4 +1,4 @@
-import "./StorySection.css";
+import "./AboutStory.css";
 
 export default function StorySection() {
   return (

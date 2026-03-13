@@ -2,7 +2,7 @@ import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import StatsSection from "../../components/StatsSection/StatsSection";
 import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
 import AboutHero from "./components/AboutHero/AboutHero";
-import StorySection from "./components/StorySection/StorySection";
+import AboutStory from "./components/AboutStory/AboutStory";
 import AboutBusiness from "./components/AboutBusiness/AboutBusiness";
 import AboutDashboard from "./components/AboutDashboard/AboutDashboard";
 import { clientLogos } from "../../data/clientsLogos";
@@ -18,7 +18,7 @@ export default function AboutPage() {
       </div>
       <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
-        <StorySection />
+        <AboutStory />
       </div>
       <div className="page-background-black">
         <div className="page-container">
