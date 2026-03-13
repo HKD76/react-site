@@ -4,6 +4,7 @@ import CallToActionSection from "../../components/CallToActionSection/CallToActi
 import AboutHero from "./components/AboutHero/AboutHero";
 import StorySection from "./components/StorySection/StorySection";
 import AboutBusiness from "./components/AboutBusiness/AboutBusiness";
+import AboutDashboard from "./components/AboutDashboard/AboutDashboard";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function AboutPage() {

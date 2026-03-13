@@ -3,13 +3,13 @@ import "./AboutBusiness.css";
 
 export default function AboutBusiness() {
   return (
-    <section className="business-section">
-      <div className="business-container">
-        <div className="business-content">
-          <h2 className="business-title">Outil de Business Intelligence (BI) intégré</h2>
-          <p className="business-description">Permet de créer ses propres rapports</p>
-          <p className="business-description">Non limité en terme d’utilisateurs et de tableaux de bord</p>
-          <p className="business-description">
+    <section className="about-business-section">
+      <div className="about-business-container">
+        <div className="about-business-content">
+          <h2 className="about-business-title">Outil de Business Intelligence (BI) intégré</h2>
+          <p className="about-business-description">Permet de créer ses propres rapports</p>
+          <p className="about-business-description">Non limité en terme d’utilisateurs et de tableaux de bord</p>
+          <p className="about-business-description">
             Connecté à notre base de données. Mais peut être connecté à d’autres
             bases de données comme une pointeuse par exemple afin d'agréger la
             donnée existante.
@@ -18,7 +18,7 @@ export default function AboutBusiness() {
             Demander une démo
           </Link>
         </div>
-        <div className="business-image">
+        <div className="about-business-image">
           <img src="/images/collaboration-graphic.png" alt="Business" />
         </div>
       </div>

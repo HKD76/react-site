@@ -1,4 +1,4 @@
-.business-container {
+.about-business-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,10 +6,10 @@
   padding: 40px 0;
 }
 
-.business-content {
+.about-business-content {
   flex: 1;
 }
-.business-title {
+.about-business-title {
   color: #fff;
   font-size: 3rem;
   font-weight: 300;
@@ -17,7 +17,7 @@
   margin-top: unset;
   padding-bottom: 40px;
 }
-.business-description {
+.about-business-description {
   color: #cdd3d2;
   font-size: 1rem;
   line-height: 1.7;
@@ -25,18 +25,18 @@
   position: relative;
 }
 
-.business-image {
+.about-business-image {
   flex: 1;
 }
 
-.business-image img {
+.about-business-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
 @media (max-width: 992px) {
-  .business-container {
+  .about-business-container {
     flex-direction: column;
     text-align: center;
   }
