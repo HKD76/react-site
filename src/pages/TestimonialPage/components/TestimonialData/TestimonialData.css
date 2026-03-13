@@ -20,6 +20,7 @@
   flex: 1 1 calc(50% - 20px);
   background: #fff;
   padding: 25px;
+  margin: 40px 0;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -29,6 +30,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--t-colors--brand);;
 }
 
 .testimonial-data-desc {
