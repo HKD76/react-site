@@ -3,6 +3,7 @@ import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import LogicielAdvantageCards from "../LogicielPage/components/LogicielAdvantage/LogicielAdvantageCards/LogicielAdvantageCards";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import TrySection from "../../components/TrySection/TrySection";
+import ProjetStep from "./components/ProjetStep/ProjetStep";
 import { Link } from "react-router-dom";
 import { clientLogos } from "../../data/clientsLogos";
 import "./ProjetPage.css";
@@ -20,6 +21,9 @@ export default function ProjetPage() {
         <ClientsSlider logos={clientLogos} />
       </div>
       <img src="/images/gray-bottom-shape.svg" alt="" />
+      <div className="page-container">
+        <ProjetStep />
+      </div>
       <CallToActionSection />
       <div className="page-container projet-container">
         <h2 className="projet-title">
