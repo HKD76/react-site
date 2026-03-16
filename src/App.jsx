@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage/AboutPage'
 import TestimonialPage from './pages/TestimonialPage/TestimonialPage'
 import LogicielPage from './pages/LogicielPage/LogicielPage'
 import ProjetPage from './pages/ProjetPage/ProjetPage'
+import EbookPage from './pages/EbookPage/EbookPage'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="solution/logiciel-trs" element={<LogicielPage />} />
           <Route path="solution/votre-projet-mes" element={<ProjetPage />} />
           <Route path="ressources/blog" element={<PlaceholderPage />} />
-          <Route path="ressources/ebook" element={<PlaceholderPage />} />
+          <Route path="ressources/ebook" element={<EbookPage />} />
           <Route path="ressources/media" element={<PlaceholderPage />} />
           <Route path="clients/temoignages" element={<TestimonialPage />} />
           <Route path="clients/cas-clients" element={<PlaceholderPage />} />
