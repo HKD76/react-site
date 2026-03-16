@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound'
 import AboutPage from './pages/AboutPage/AboutPage'
 import TestimonialPage from './pages/TestimonialPage/TestimonialPage'
 import LogicielPage from './pages/LogicielPage/LogicielPage'
+import ProjetPage from './pages/ProjetPage/ProjetPage'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="rgpd" element={<PlaceholderPage />} />
           <Route path="solution/a-propos-de-realtimes" element={<AboutPage />} />
           <Route path="solution/logiciel-trs" element={<LogicielPage />} />
-          <Route path="solution/votre-projet-mes" element={<PlaceholderPage />} />
+          <Route path="solution/votre-projet-mes" element={<ProjetPage />} />
           <Route path="ressources/blog" element={<PlaceholderPage />} />
           <Route path="ressources/ebook" element={<PlaceholderPage />} />
           <Route path="ressources/media" element={<PlaceholderPage />} />

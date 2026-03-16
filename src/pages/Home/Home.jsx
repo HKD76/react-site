@@ -10,7 +10,7 @@ import CallToActionSection from "../../components/CallToActionSection/CallToActi
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import DescriptionSection from "../../components/DescriptionSection/DescriptionSection";
 import StatsSection from "../../components/StatsSection/StatsSection";
-import TrySection from "./components/TrySection/TrySection";
+import TrySection from "../../components/TrySection/TrySection";
 import { clientLogos } from "../../data/clientsLogos";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 
