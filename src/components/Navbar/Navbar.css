@@ -211,4 +211,8 @@
     display: block;
     font-size: 1.5rem;
   }
+  .nav a:not(.btn-demo),
+  .dropdown button {
+    font-size: .8rem;
+  }
 }
