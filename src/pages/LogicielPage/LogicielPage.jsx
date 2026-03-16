@@ -8,6 +8,7 @@ import LogicielInstal from "./components/LogicielInstal/LogicielInstal";
 import TestimonialData from "../TestimonialPage/components/TestimonialData/TestimonialData";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import LogicielDeploy from "./components/LogicielDeploy/LogicielDeploy";
+import LogicielInfo from "./components/LogicielInfo/LogicielInfo";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -36,6 +37,11 @@ export default function LogicielPage() {
       <div className="page-container">
         <LogicielInstal />
         <LogicielDeploy />
+      </div>
+      <div className="page-background-black">
+        <div className="page-container">
+          <LogicielInfo />
+        </div>
       </div>
       <TestimonialSection />
       <div className="page-container">
