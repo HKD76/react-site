@@ -1,5 +1,6 @@
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import LogicielHero from "./components/LogicielHero/LogicielHero";
+import LogicielAdvantage from "./components/LogicielAdvantage/LogicielAdvantage";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -15,6 +16,10 @@ export default function LogicielPage() {
         <ClientsSlider logos={clientLogos} />
       </div>
       <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <div className="page-container">
+        <LogicielAdvantage />
+
+      </div>
     </section>
   );
 }
