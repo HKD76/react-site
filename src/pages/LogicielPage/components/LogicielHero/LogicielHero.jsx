@@ -11,7 +11,7 @@ export default function LogicielHero() {
           l'industrie 4.0
         </p>
         <div className="logiciel-hero-buttons">
-          <a href="" className="logiciel-hero-button">
+          <a href="#logiciel-advantage" className="logiciel-hero-button">
             Les avantages
           </a>
           <Link to="/demander-une-demo" className="button-secondary">

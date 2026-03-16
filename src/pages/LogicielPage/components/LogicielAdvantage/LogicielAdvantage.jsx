@@ -3,7 +3,7 @@ import "./LogicielAdvantage.css";
 
 export default function LogicielAdvantage() {
   return (
-    <section className="logiciel-advantage">
+    <section id="logiciel-advantage" className="logiciel-advantage">
       <div className="logiciel-advantage-container">
         <h2 className="logiciel-advantage-title">
           Un <span className="highlight">logiciel TRS-MES</span> aux multiples
