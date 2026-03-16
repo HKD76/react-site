@@ -4,6 +4,7 @@ import LogicielAdvantage from "./components/LogicielAdvantage/LogicielAdvantage"
 import LogicielExample from "./components/LogicielExample/LogicielExample";
 import LogicielProductivity from "./components/LogicielProductivity/LogicielProductivity";
 import LogicielRealTimes from "./components/LogicielRealTimes/LogicielRealTimes";
+import LogicielInstal from "./components/LogicielInstal/LogicielInstal";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -28,6 +29,9 @@ export default function LogicielPage() {
         <div className="page-container">
           <LogicielRealTimes />
         </div>
+      </div>
+      <div className="page-container">
+        <LogicielInstal />
       </div>
     </section>
   );
