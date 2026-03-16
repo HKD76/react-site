@@ -2,6 +2,7 @@ import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import LogicielHero from "./components/LogicielHero/LogicielHero";
 import LogicielAdvantage from "./components/LogicielAdvantage/LogicielAdvantage";
 import LogicielExample from "./components/LogicielExample/LogicielExample";
+import LogicielProductivity from "./components/LogicielProductivity/LogicielProductivity";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -20,6 +21,7 @@ export default function LogicielPage() {
       <div className="page-container">
         <LogicielAdvantage />
         <LogicielExample />
+        <LogicielProductivity />
       </div>
     </section>
   );
