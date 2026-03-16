@@ -1,0 +1,37 @@
+.logiciel-rtbox {
+  padding: 40px 0;
+  background-image: linear-gradient(92deg, #6fc4003d 41%, #fff 60%);
+  border-radius: 14px;
+  margin: 40px;
+}
+.logiciel-rtbox-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.logiciel-rtbox-content {
+  max-width: 600px;
+  padding: 0 40px;
+}
+.logiciel-rtbox-title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.logiciel-rtbox-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.logiciel-rtbox-image {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .logiciel-rtbox-card {
+    flex-direction: column;
+  }
+}

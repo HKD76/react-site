@@ -9,6 +9,7 @@ import TestimonialData from "../TestimonialPage/components/TestimonialData/Testi
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import LogicielDeploy from "./components/LogicielDeploy/LogicielDeploy";
 import LogicielInfo from "./components/LogicielInfo/LogicielInfo";
+import LogicielRtbox from "./components/LogicielRtbox/LogicielRtbox";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -42,6 +43,9 @@ export default function LogicielPage() {
         <div className="page-container">
           <LogicielInfo />
         </div>
+      </div>
+      <div className="page-container">
+        <LogicielRtbox />
       </div>
       <TestimonialSection />
       <div className="page-container">
