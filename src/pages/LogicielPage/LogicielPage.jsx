@@ -10,6 +10,7 @@ import TestimonialSection from "../../components/TestimonialSection/TestimonialS
 import LogicielDeploy from "./components/LogicielDeploy/LogicielDeploy";
 import LogicielInfo from "./components/LogicielInfo/LogicielInfo";
 import LogicielRtbox from "./components/LogicielRtbox/LogicielRtbox";
+import LogicielBoost from "./components/LogicielBoost/LogicielBoost";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -46,6 +47,7 @@ export default function LogicielPage() {
       </div>
       <div className="page-container">
         <LogicielRtbox />
+        <LogicielBoost />
       </div>
       <TestimonialSection />
       <div className="page-container">
