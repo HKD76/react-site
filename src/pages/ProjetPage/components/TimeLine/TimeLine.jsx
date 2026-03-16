@@ -45,7 +45,7 @@ export default function TimeLine() {
   }, []);
 
   return (
-    <section className="timeline" ref={timelineRef}>
+    <section  className="timeline" ref={timelineRef}>
       <div className="timeline-progress">
         <div className="timeline-progress-bar" ref={progressRef}></div>
       </div>

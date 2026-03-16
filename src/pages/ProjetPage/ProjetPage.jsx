@@ -4,6 +4,7 @@ import LogicielAdvantageCards from "../LogicielPage/components/LogicielAdvantage
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import TrySection from "../../components/TrySection/TrySection";
 import ProjetStep from "./components/ProjetStep/ProjetStep";
+import ProjetHero from "./components/ProjetHero/ProjetHero";
 import { Link } from "react-router-dom";
 import { clientLogos } from "../../data/clientsLogos";
 import "./ProjetPage.css";
@@ -13,6 +14,7 @@ export default function ProjetPage() {
     <section>
       <div className="page-background">
         <div className="page-container">
+          <ProjetHero />
           <p className="page-subtitle">
             Ils sont équipés par le système{" "}
             <span className="highlight">RealTiMES</span>

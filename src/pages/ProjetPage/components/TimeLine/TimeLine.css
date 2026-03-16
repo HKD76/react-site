@@ -1,6 +1,6 @@
 .timeline {
   position: relative;
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   padding-top: 20px;
   margin-top: 40px;
@@ -19,7 +19,7 @@
 .timeline-progress-bar {
   width: 100%;
   height: 0%;
-  background: #6FC400;
+  background: #6fc400;
   transition: height 0.1s linear;
 }
 
@@ -59,6 +59,38 @@
   letter-spacing: 2px;
   color: #777;
 }
-.timeline-step{
-    color: #6FC400;
+.timeline-step {
+  color: #6fc400;
+}
+@media (max-width: 992px) {
+  .timeline-progress {
+    left: 20px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 40px 1fr;
+    margin: 80px 0;
+  }
+
+  .timeline-left {
+    grid-column: 2;
+    text-align: left;
+    padding: 0;
+  }
+
+  .timeline-right {
+    grid-column: 2;
+    padding: 0;
+    margin-top: 10px;
+    max-width: 350px;
+  }
+
+  .timeline-center {
+    grid-column: 1;
+    justify-content: flex-start;
+  }
+
+  .timeline-dot {
+    margin-left: 12px;
+  }
 }
