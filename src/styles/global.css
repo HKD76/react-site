@@ -227,9 +227,9 @@ body {
   justify-content: center;
   height: 100%;
   padding: 80px 0;
-  margin : unset;
+  margin: unset;
 }
-.page-subtitle{
+.page-subtitle {
   font-size: 1.2rem;
   text-align: center;
   padding: 20px 0;
@@ -251,6 +251,24 @@ body {
 .button:hover {
   background-color: #333;
 }
+.button-secondary {
+  border-style: solid;
+  border-color: var(--u-colors--green-700);
+  color: var(--black);
+  background-color: #0000;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+  text-decoration: none;
+}
+.button-secondary:hover {
+  background-color: var(--t-colors--brand);
+  color: #fff;
+}
+
 .card-button {
   text-decoration: none;
   align-self: center;
@@ -321,8 +339,7 @@ h6 {
   margin-top: 10px;
 }
 p {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: unset;
 }
 blockquote {
   margin: 0 0 10px 0;
@@ -350,8 +367,7 @@ fieldset {
   margin: 0;
   border: 0;
 }
-button,
-[type="button"],
+button [type="button"],
 [type="reset"] {
   border: 0;
   cursor: pointer;

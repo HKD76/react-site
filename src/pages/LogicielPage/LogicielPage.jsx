@@ -1,0 +1,20 @@
+import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
+import LogicielHero from "./components/LogicielHero/LogicielHero";
+import { clientLogos } from "../../data/clientsLogos";
+
+export default function LogicielPage() {
+  return (
+    <section>
+      <div className="page-background">
+        <div className="page-container">
+          <LogicielHero />
+        </div>
+        <p className="page-subtitle">
+          Nos clients sont des références internationales
+        </p>
+        <ClientsSlider logos={clientLogos} />
+      </div>
+      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+    </section>
+  );
+}

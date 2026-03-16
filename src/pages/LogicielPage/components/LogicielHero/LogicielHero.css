@@ -1,0 +1,28 @@
+.logiciel-hero-button {
+  width: fit-content;
+  align-self: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px none var(--black);
+  background-color: var(--t-colors--brand);
+  color: #fff;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+.logiciel-hero-button:hover {
+  background-color: #333;
+}
+.logiciel-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.logiciel-hero-image {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
