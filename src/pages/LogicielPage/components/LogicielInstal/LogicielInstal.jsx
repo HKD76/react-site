@@ -7,7 +7,7 @@ export default function LogicielInstal() {
         <div className="logiciel-instal-card">
           <div className="logiciel-instal-content">
             <h2 className="logiciel-instal-title">
-              Installation rapide en 48h sur votre ligne de production
+              <span className="highlight">Installation rapide</span> en 48h sur votre ligne de production
             </h2>
             <p className="logiciel-instal-text">
               Grâce à leur intégration externe, les systèmes tout-en-un de
