@@ -3,6 +3,7 @@ import LogicielHero from "./components/LogicielHero/LogicielHero";
 import LogicielAdvantage from "./components/LogicielAdvantage/LogicielAdvantage";
 import LogicielExample from "./components/LogicielExample/LogicielExample";
 import LogicielProductivity from "./components/LogicielProductivity/LogicielProductivity";
+import LogicielRealTimes from "./components/LogicielRealTimes/LogicielRealTimes";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -22,6 +23,11 @@ export default function LogicielPage() {
         <LogicielAdvantage />
         <LogicielExample />
         <LogicielProductivity />
+      </div>
+      <div className="page-background-black">
+        <div className="page-container">
+          <LogicielRealTimes />
+        </div>
       </div>
     </section>
   );

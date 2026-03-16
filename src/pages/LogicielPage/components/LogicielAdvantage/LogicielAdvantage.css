@@ -20,7 +20,7 @@
 .logiciel-advantage-card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 330px;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
