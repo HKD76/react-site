@@ -5,6 +5,9 @@ import LogicielExample from "./components/LogicielExample/LogicielExample";
 import LogicielProductivity from "./components/LogicielProductivity/LogicielProductivity";
 import LogicielRealTimes from "./components/LogicielRealTimes/LogicielRealTimes";
 import LogicielInstal from "./components/LogicielInstal/LogicielInstal";
+import TestimonialData from "../TestimonialPage/components/TestimonialData/TestimonialData";
+import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
+import LogicielDeploy from "./components/LogicielDeploy/LogicielDeploy";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function LogicielPage() {
@@ -32,6 +35,11 @@ export default function LogicielPage() {
       </div>
       <div className="page-container">
         <LogicielInstal />
+        <LogicielDeploy />
+      </div>
+      <TestimonialSection />
+      <div className="page-container">
+        <TestimonialData />
       </div>
     </section>
   );
