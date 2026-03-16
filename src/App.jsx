@@ -8,10 +8,12 @@ import TestimonialPage from './pages/TestimonialPage/TestimonialPage'
 import LogicielPage from './pages/LogicielPage/LogicielPage'
 import ProjetPage from './pages/ProjetPage/ProjetPage'
 import EbookPage from './pages/EbookPage/EbookPage'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.js'
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
