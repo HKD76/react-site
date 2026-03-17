@@ -60,3 +60,8 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 1105px) {
+  .testimonial-data-info{
+    margin: 10px 0;
+  }
+}
