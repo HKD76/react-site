@@ -25,7 +25,7 @@ export default function TarifHero() {
               <li className="tarif-hero-card-text">Envoi de rapports automatiques</li>
               <li className="tarif-hero-card-text">Utilisateurs</li>
             </ul>
-            <a className="tarif-hero-card-button" href="#">Je demande à être appelé</a>
+            <a className="tarif-hero-card-button" href="#tarif-form">Je demande à être appelé</a>
             <p className="tarif-hero-card-text">Pour chaque machine installée :</p>
             <ul>
               <li className="tarif-hero-card-list">Module de captation des arrêts (RTBOX)</li>
