@@ -1,0 +1,64 @@
+.tarif-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    padding: 40px 0;
+    margin: 0 40px 0 40px;
+  }
+}
+.tarif-hero-card {
+  max-width: 800px;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 14px;
+  margin: 40px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tarif-hero-card-content {
+  margin: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+.tarif-hero-card-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.tarif-hero-card-price {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.tarif-hero-card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.tarif-hero-card-list {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.tarif-hero-card-button {
+  text-decoration: none;
+  width: 60%;
+  display: inline-block;
+  border: 1px none var(--black);
+  background-color: var(--t-colors--brand);
+  color: #fff;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+  align-self: center;
+  margin: 20px 0;
+}

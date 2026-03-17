@@ -11,6 +11,7 @@ import EbookPage from './pages/EbookPage/EbookPage'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.js'
 import CasPage from './pages/CasPage/CasPage.jsx'
 import MediaPage from './pages/MediaPage/MediaPage.jsx'
+import TarifPage from './pages/TarifPage/TarifPage.jsx'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<PlaceholderPage />} />
-          <Route path="tarif" element={<PlaceholderPage />} />
+          <Route path="tarif" element={<TarifPage />} />
           <Route path="demander-une-demo" element={<PlaceholderPage />} />
           <Route path="mentions-legales" element={<PlaceholderPage />} />
           <Route path="rgpd" element={<PlaceholderPage />} />
