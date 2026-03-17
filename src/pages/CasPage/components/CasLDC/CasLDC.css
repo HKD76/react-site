@@ -2,6 +2,9 @@
   padding: 40px 0;
   margin: 0 40px;
 }
+.cas-sodipan-content{
+    width: 100%;
+}
 .cas-ldc-container {
   display: flex;
   flex-direction: column;
