@@ -1,8 +1,9 @@
 import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
-import CasMSD from "./components/CasMSD/CasMSD";
-import { clientLogos } from "../../data/clientsLogos";
 import CasHero from "./components/CasHero/CasHero";
+import CasMSD from "./components/CasMSD/CasMSD";
+import CasLDC from "./components/CasLDC/CasLDC";
+import { clientLogos } from "../../data/clientsLogos";
 
 export default function CasPage() {
   return (
@@ -17,6 +18,7 @@ export default function CasPage() {
       <img src="/images/gray-bottom-shape.svg" alt="Gray Bottom Shape" />
       <div className="page-container">
         <CasMSD />
+        <CasLDC />
       </div>
       <CallToActionSection />
     </section>
