@@ -10,6 +10,7 @@ import ProjetPage from './pages/ProjetPage/ProjetPage'
 import EbookPage from './pages/EbookPage/EbookPage'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.js'
 import CasPage from './pages/CasPage/CasPage.jsx'
+import MediaPage from './pages/MediaPage/MediaPage.jsx'
 
 function App() {
   return (
@@ -26,9 +27,8 @@ function App() {
           <Route path="solution/a-propos-de-realtimes" element={<AboutPage />} />
           <Route path="solution/logiciel-trs" element={<LogicielPage />} />
           <Route path="solution/votre-projet-mes" element={<ProjetPage />} />
-          <Route path="ressources/blog" element={<PlaceholderPage />} />
           <Route path="ressources/ebook" element={<EbookPage />} />
-          <Route path="ressources/media" element={<PlaceholderPage />} />
+          <Route path="ressources/media" element={<MediaPage />} />
           <Route path="clients/temoignages" element={<TestimonialPage />} />
           <Route path="clients/cas-clients" element={<CasPage />} />
         </Route>

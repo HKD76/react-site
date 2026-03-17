@@ -76,9 +76,6 @@ export default function Navbar() {
                 className={`dropdown-menu ${openDropdown === "ressources" ? "show" : ""}`}
               >
                 <li>
-                  <Link to="/ressources/blog">Blog</Link>
-                </li>
-                <li>
                   <Link to="/ressources/ebook">eBook</Link>
                 </li>
                 <li>
