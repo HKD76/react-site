@@ -3,6 +3,8 @@ import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import CasHero from "./components/CasHero/CasHero";
 import CasMSD from "./components/CasMSD/CasMSD";
 import CasLDC from "./components/CasLDC/CasLDC";
+import CasPomnium from "./components/CasPomnium/CasPomnium";
+import CasLaitiere from "./components/CasLaitiere/CasLaitiere";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function CasPage() {
@@ -19,6 +21,8 @@ export default function CasPage() {
       <div className="page-container">
         <CasMSD />
         <CasLDC />
+        <CasPomnium />
+        <CasLaitiere />
       </div>
       <CallToActionSection />
     </section>

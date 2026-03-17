@@ -3,7 +3,7 @@ import { Autoplay } from "swiper/modules";
 import { useState } from "react";
 import "./CasLDC.css";
 
-export default function CasMSD() {
+export default function CasLDC() {
   const [open, setOpen] = useState(false);
   return (
     <section className="cas-ldc">
@@ -23,7 +23,7 @@ export default function CasMSD() {
         </div>
         <div className="cas-ldc-subcontent" onClick={() => setOpen(!open)}>
           <div className="cas-ldc-subtext">
-            <p className="cas-ldc-subtext-title">Cas client ldc</p>
+            <p className="cas-ldc-subtext-title">Cas client LDC</p>
             <div className={`cas-ldc-subtext-cross ${open ? "open" : ""}`}>
               <img src="/images/plus.svg" alt="cross" />
             </div>
