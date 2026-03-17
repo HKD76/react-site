@@ -5,6 +5,7 @@ import CasMSD from "./components/CasMSD/CasMSD";
 import CasLDC from "./components/CasLDC/CasLDC";
 import CasPomnium from "./components/CasPomnium/CasPomnium";
 import CasLaitiere from "./components/CasLaitiere/CasLaitiere";
+import CasKnauf from "./components/CasKnauf/CasKnauf";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function CasPage() {
@@ -23,6 +24,7 @@ export default function CasPage() {
         <CasLDC />
         <CasPomnium />
         <CasLaitiere />
+        <CasKnauf />
       </div>
       <CallToActionSection />
     </section>

@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  .swiper {
+    padding: unset;
+  }
 }
 .cas-msd-subtext-cross img {
   width: 18px;
@@ -41,7 +44,7 @@
   justify-content: space-between;
   padding: 20px 0;
 }
-.cas-msd-content-text{
+.cas-msd-content-text {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;

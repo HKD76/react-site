@@ -27,7 +27,7 @@ export default function CasLaitiere() {
         <div className="cas-laitiere-subcontent" onClick={() => setOpen(!open)}>
           <div className="cas-laitiere-subtext">
             <p className="cas-laitiere-subtext-title">
-              Cas client Société Laitière
+              Cas client Société Laitière Laqueuille
             </p>
             <div className={`cas-laitiere-subtext-cross ${open ? "open" : ""}`}>
               <img src="/images/plus.svg" alt="cross" />
