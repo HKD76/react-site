@@ -9,6 +9,7 @@ import LogicielPage from './pages/LogicielPage/LogicielPage'
 import ProjetPage from './pages/ProjetPage/ProjetPage'
 import EbookPage from './pages/EbookPage/EbookPage'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.js'
+import CasPage from './pages/CasPage/CasPage.jsx'
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="ressources/ebook" element={<EbookPage />} />
           <Route path="ressources/media" element={<PlaceholderPage />} />
           <Route path="clients/temoignages" element={<TestimonialPage />} />
-          <Route path="clients/cas-clients" element={<PlaceholderPage />} />
+          <Route path="clients/cas-clients" element={<CasPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
