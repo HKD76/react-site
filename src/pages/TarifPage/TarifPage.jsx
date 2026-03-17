@@ -1,6 +1,8 @@
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import TarifForm from "./components/TarifForm/TarifForm";
 import TarifHero from "./components/TarifHero/TarifHero";
+import FAQSection from "../../components/FAQSection/FAQSection";
+import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import { clientLogos } from "../../data/clientsLogos";
 
 
@@ -15,6 +17,8 @@ export default function TarifPage(){
                 <ClientsSlider logos={clientLogos} />   
             </div>
             <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+            <FAQSection />
+            <TestimonialSection />
         </section>
     )
 }
