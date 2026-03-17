@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import cards from "../../data/cards";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,7 +23,9 @@ export default function CardsSlider({ cards }) {
       {cards.map((card, index) => (
         <SwiperSlide key={index}>
           <div className="slider-card">
-            <div className="icon">{card.icon}</div>
+            <div className="icon">
+              <img src={card.icon} alt={card.title} />
+            </div>
             <h3>{card.title}</h3>
             <p>{card.text}</p>
           </div>

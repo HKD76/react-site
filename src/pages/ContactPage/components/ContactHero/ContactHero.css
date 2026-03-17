@@ -1,0 +1,58 @@
+.contact-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    padding: 40px 0;
+    margin: 0 40px 0 40px;
+  }
+}
+.contact-hero-card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  border-radius: 14px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.contact-hero-card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-hero-card-title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-hero-card-label {
+  background: linear-gradient(90deg, black 0%, #6fc400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .contact-hero-card-title {
+    font-size: 2rem;
+  }
+  .contact-hero-card-label {
+    font-size: 1.5rem;
+  }
+  .contact-hero-card {
+    padding: 20px 15px;
+    margin: 20px 10px;
+  }
+}

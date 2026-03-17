@@ -12,6 +12,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop.js'
 import CasPage from './pages/CasPage/CasPage.jsx'
 import MediaPage from './pages/MediaPage/MediaPage.jsx'
 import TarifPage from './pages/TarifPage/TarifPage.jsx'
+import ContactPage from './pages/ContactPage/ContactPage.jsx'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="contact" element={<PlaceholderPage />} />
+          <Route path="contact" element={<ContactPage />} />
           <Route path="tarif" element={<TarifPage />} />
           <Route path="demander-une-demo" element={<PlaceholderPage />} />
           <Route path="mentions-legales" element={<PlaceholderPage />} />

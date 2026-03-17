@@ -1,5 +1,5 @@
 import "./FeaturesSection.css";
-import CardsSlider from "../../components/CardsSlider/CardsSlider.jsx";
+import CardsSlider from "../../../../components/CardsSlider/CardsSlider.jsx";
 
 export default function FeaturesSection({ cards }) {
   return (
