@@ -15,6 +15,7 @@ import TarifPage from './pages/TarifPage/TarifPage.jsx'
 import ContactPage from './pages/ContactPage/ContactPage.jsx'
 import DemoPage from './pages/DemoPage/DemoPage.jsx'
 import RgpdPage from './pages/RgpdPage/RgpdPage.jsx'
+import MentionPage from './pages/MentionPage/MentionPage.jsx'
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="tarif" element={<TarifPage />} />
           <Route path="demander-une-demo" element={<DemoPage />} />
-          <Route path="mentions-legales" element={<PlaceholderPage />} />
+          <Route path="mentions-legales" element={<MentionPage />} />
           <Route path="rgpd" element={<RgpdPage />} />
           <Route path="solution/a-propos-de-realtimes" element={<AboutPage />} />
           <Route path="solution/logiciel-trs" element={<LogicielPage />} />
