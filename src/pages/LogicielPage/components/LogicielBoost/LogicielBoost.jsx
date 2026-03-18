@@ -1,16 +1,27 @@
 import "./LogicielBoost.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function LogicielBoost() {
   return (
     <section className="logiciel-boost">
-      <div className="logiciel-boost-container">
+      <motion.div
+        className="logiciel-boost-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="logiciel-boost-content">
-          <h2 className="logiciel-boost-title">
+          <motion.h2 variants={fadeInUpItem} className="logiciel-boost-title">
             Boostez votre{" "}
             <span className="highlight">performance industrielle</span> en
             impliquant vos équipes{" "}
-          </h2>
-          <p className="logiciel-boost-text">
+          </motion.h2>
+          <motion.p variants={fadeInUpItem} className="logiciel-boost-text">
             Avec des{" "}
             <span className="highlight">
               tableaux de bord personnalisables et collaboratifs
@@ -21,9 +32,9 @@ export default function LogicielBoost() {
             plus grande motivation du personnel qui possède une vision claire et
             instantanée de sa capacité de production. Les outils d'analyse
             permettent l'amélioration continue de la qualité.
-          </p>
+          </motion.p>
           <div className="logiciel-boost-cards">
-            <div className="logiciel-boost-card">
+            <motion.div variants={fadeInUpItem} className="logiciel-boost-card">
               <div className="logiciel-boost-image">
                 <img
                   src="/images/suivi-productivité_1suivi-productivité.webp"
@@ -34,8 +45,8 @@ export default function LogicielBoost() {
               <p className="logiciel-boost-card-text">
                 Libérez le potentiel des équipes avec un ROI en moins 12 mois !
               </p>
-            </div>
-            <div className="logiciel-boost-card">
+            </motion.div>
+            <motion.div variants={fadeInUpItem} className="logiciel-boost-card">
               <div className="logiciel-boost-image">
                 <img
                   src="/images/suivi-arrêts_1suivi-arrêts.webp"
@@ -47,8 +58,8 @@ export default function LogicielBoost() {
                 Un outil collaboratif et transparent pour impliquer les équipes
                 et donner de l’autonomie
               </p>
-            </div>
-            <div className="logiciel-boost-card">
+            </motion.div>
+            <motion.div variants={fadeInUpItem} className="logiciel-boost-card">
               <div className="logiciel-boost-image">
                 <img
                   src="/images/Dashboard-realtimes-vecto-p-800.webp"
@@ -60,10 +71,10 @@ export default function LogicielBoost() {
                 Les accès utilisateurs sont limités vous assurant un contrôle
                 complet
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
