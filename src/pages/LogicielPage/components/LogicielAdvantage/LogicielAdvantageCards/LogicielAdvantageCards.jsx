@@ -1,9 +1,20 @@
 import "../LogicielAdvantage.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../../animation/animation";
 
 export default function LogicielAdvantageCards() {
   return (
-    <div className="logiciel-advantage-content">
-      <div className="logiciel-advantage-card">
+    <motion.div
+      className="logiciel-advantage-content"
+      variants={fadeInUpContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
+      <motion.div variants={fadeInUpItem} className="logiciel-advantage-card">
         <div className="logiciel-advantage-image">
           <img src="/images/logo-symbole.svg" alt="Logo Realtimes" />
         </div>
@@ -18,8 +29,8 @@ export default function LogicielAdvantageCards() {
           sans perturber la production. Les opérateurs bénéficient ainsi d'une
           meilleure gestion des processus de production.
         </p>
-      </div>
-      <div className="logiciel-advantage-card">
+      </motion.div>
+      <motion.div variants={fadeInUpItem} className="logiciel-advantage-card">
         <div className="logiciel-advantage-image">
           <img src="/images/logo-symbole.svg" alt="Logo Realtimes" />
         </div>
@@ -34,8 +45,8 @@ export default function LogicielAdvantageCards() {
           de qualité et le calcul du{" "}
           <span className="highlight">taux de rendement</span>.
         </p>
-      </div>
-      <div className="logiciel-advantage-card">
+      </motion.div>
+      <motion.div variants={fadeInUpItem} className="logiciel-advantage-card">
         <div className="logiciel-advantage-image">
           <img src="/images/logo-symbole.svg" alt="Logo Realtimes" />
         </div>
@@ -47,8 +58,7 @@ export default function LogicielAdvantageCards() {
           <span className="highlight">RealTiMES</span>, mais peut être connecté
           à d’autres bases de données comme une pointeuse par exemple.
         </p>
-      </div>
-    </div>
-    
+      </motion.div>
+    </motion.div>
   );
 }
