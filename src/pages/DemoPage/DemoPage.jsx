@@ -8,6 +8,7 @@ import QualitySection from "../Home/components/QualitySection/QualitySection";
 import SupportSection from "../Home/components/SupportSection/SupportSection";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import DemoHero from "./components/DemoHero/DemoHero";
+import DemoForm from "./components/DemoForm/DemoForm";
 import cards from "../../data/cards";
 import { clientLogos } from "../../data/clientsLogos";
 
@@ -17,6 +18,7 @@ export default function DemoPage() {
       <div className="page-background">
         <div className="page-container">
           <DemoHero />
+          <DemoForm />
         </div>
         <p className="page-subtitle">
           Nos clients sont des références internationales
