@@ -1,38 +1,53 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 import "./LogicielInfo.css";
 
 export default function LogicielInfo() {
+  const MotionLink = motion(Link);
   return (
     <section className="logiciel-info">
-      <div className="logiciel-info-container">
+      <motion.div
+        className="logiciel-info-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="logiciel-info-content">
-          <p className="logiciel-info-label">Les avantages</p>
-          <h2 className="logiciel-info-title">De l'analyse à l'action</h2>
-          <p className="logiciel-info-text">
+          <motion.p variants={fadeInUpItem} className="logiciel-info-label">Les avantages</motion.p>
+          <motion.h2 variants={fadeInUpItem} className="logiciel-info-title">De l'analyse à l'action</motion.h2>
+          <motion.p variants={fadeInUpItem} className="logiciel-info-text">
             Permet de quantifier en temps réel les opportunités de gains et de
             mesurer les résultats obtenus
-          </p>
-          <p className="logiciel-info-text">
+          </motion.p>
+          <motion.p variants={fadeInUpItem} className="logiciel-info-text">
             Dans un contexte de rareté des ressources, RealTiMES permet
             d'identifier et de diminuer les gaspillages
-          </p>
-          <p className="logiciel-info-text">
+          </motion.p>
+          <motion.p variants={fadeInUpItem} className="logiciel-info-text">
             Suppression des enregistrements manuels. Données exportables et
             imprimables. Support technique à distance.
-          </p>
-          <p className="logiciel-info-text">
+          </motion.p>
+          <motion.p variants={fadeInUpItem} className="logiciel-info-text">
             Identification rapide et précise des causes des arrêts de production
             avec des recommandations pour améliorer la performance.
-          </p>
-          <Link to="/demander-une-demo" className="logiciel-info-button">
+          </motion.p>
+          <MotionLink variants={fadeInUpItem} to="/demander-une-demo" className="logiciel-info-button">
             {" "}
             Demander une démo
-          </Link>
+          </MotionLink>
         </div>
-        <div className="logiciel-info-image">
-            <img src="/images/amelioration-continue-production-p-800.webp" alt="Amelioration continue" />
-        </div>
-      </div>
+        <motion.div variants={fadeInUpItem} className="logiciel-info-image">
+          <img
+            src="/images/amelioration-continue-production-p-800.webp"
+            alt="Amelioration continue"
+          />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
