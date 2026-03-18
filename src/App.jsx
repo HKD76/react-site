@@ -13,6 +13,7 @@ import CasPage from './pages/CasPage/CasPage.jsx'
 import MediaPage from './pages/MediaPage/MediaPage.jsx'
 import TarifPage from './pages/TarifPage/TarifPage.jsx'
 import ContactPage from './pages/ContactPage/ContactPage.jsx'
+import DemoPage from './pages/DemoPage/DemoPage.jsx'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="tarif" element={<TarifPage />} />
-          <Route path="demander-une-demo" element={<PlaceholderPage />} />
+          <Route path="demander-une-demo" element={<DemoPage />} />
           <Route path="mentions-legales" element={<PlaceholderPage />} />
           <Route path="rgpd" element={<PlaceholderPage />} />
           <Route path="solution/a-propos-de-realtimes" element={<AboutPage />} />
