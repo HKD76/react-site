@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
 import "./TrySection.css";
 
 export default function TrySection() {
   return (
-    <section className="try-section">
-      <div className="try-container">
+    <motion.section
+      className="try-section"
+      variants={fadeInUpContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
+      <motion.div variants={fadeInUpItem} className="try-container">
         <div className="try-image">
           <img
             src="/images/Dashboard-suivi-production-industrielle_1.avif"
@@ -21,7 +29,7 @@ export default function TrySection() {
             Demander une démo
           </Link>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
