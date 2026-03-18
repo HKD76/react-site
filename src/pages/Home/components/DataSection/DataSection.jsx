@@ -7,6 +7,7 @@ import {
 import "./DataSection.css";
 
 export default function DataSection() {
+  const MotionLink = motion(Link);
   return (
     <section className="data-section">
       <motion.div
@@ -16,7 +17,7 @@ export default function DataSection() {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <motion.div variants={fadeInUpItem} className="data-card">
+        <div className="data-card">
           <div className="data-content">
             <motion.h2 variants={fadeInUpItem}>
               <span className="highlight">RealTiMES</span> est un logiciel de
@@ -36,9 +37,9 @@ export default function DataSection() {
               <img src="/images/data.svg" alt="picto data" />
             </motion.div>
 
-            <motion.Link variants={fadeInUpItem} to="/solution/a-propos-de-realtimes" className="card-button">
+            <MotionLink variants={fadeInUpItem} to="/solution/a-propos-de-realtimes" className="card-button">
               La solution de suivi RealTiMES
-            </motion.Link>
+            </MotionLink>
           </div>
 
           <motion.div variants={fadeInUpItem} className="data-image">
@@ -47,7 +48,7 @@ export default function DataSection() {
               alt="graphique gain productivité"
             />
           </motion.div>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );
