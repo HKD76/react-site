@@ -1,12 +1,23 @@
 import "./DescriptionSection.css";
+import { motion } from "framer-motion";
+import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
 
 export default function DescriptionSection() {
   return (
     <section className="description-section">
-      <div className="container">
-        <h2><span className="highlight">Fonctionnalités</span> et avantages principaux de notre logiciel</h2>
+      <motion.div
+        className="container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.h2 variants={fadeInUpItem}>
+          <span className="highlight">Fonctionnalités</span> et avantages
+          principaux de notre logiciel
+        </motion.h2>
         <div className="description-container">
-          <div className="description-card">
+          <motion.div variants={fadeInUpItem} className="description-card">
             <h3 className="description-title">Planification avancée</h3>
             <p className="description-text">
               Planifiez votre production de manière plus fiable grâce à un
@@ -18,8 +29,8 @@ export default function DescriptionSection() {
               PDP pour optimiser vos stocks, réduire les retards et améliorer la
               stabilité de votre planning.
             </p>
-          </div>
-          <div className="description-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="description-card">
             <h3 className="description-title">
               Amélioration de la productivité
             </h3>
@@ -31,8 +42,8 @@ export default function DescriptionSection() {
               accélèrent les délais de production, tout en optimisant les coûts
               et la qualité.
             </p>
-          </div>
-          <div className="description-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="description-card">
             <h3 className="description-title">
               Intégration de systèmes existants
             </h3>
@@ -43,9 +54,9 @@ export default function DescriptionSection() {
               fluidifie la logistique et permet une prise de décision plus
               rapide et plus éclairée.
             </p>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
