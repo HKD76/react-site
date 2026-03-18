@@ -64,7 +64,7 @@ export default function TarifForm() {
             </div>
             <div className="tarif-form-card-field full">
               <label className="tarif-form-card-label" htmlFor="texte">
-                À partir de quand souhaitez-vous intégré notre solution ?
+                À partir de quand souhaitez-vous intégrer notre solution ?
               </label>
               <textarea
                 className="tarif-form-card-input"
