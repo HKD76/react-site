@@ -4,6 +4,7 @@ import { fadeInUpContainer, fadeInUpItem } from "../../../../animation/animation
 import "./SupportSection.css";
 
 export default function SupportSection() {
+  const MotionLink = motion(Link);
   return (
     <section className="support-section">
       <motion.div
