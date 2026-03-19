@@ -11,7 +11,10 @@ export default function Navbar() {
     setOpenDropdown(openDropdown === id ? null : id);
   };
 
-  const toggleMobile = () => setMobileOpen((prev) => !prev);
+  const toggleMobile = () => {
+    setMobileOpen((prev) => !prev);
+    setOpenDropdown(null);
+  };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -22,7 +25,8 @@ export default function Navbar() {
     };
 
     document.addEventListener("pointerdown", handleClickOutside);
-    return () => document.removeEventListener("pointerdown", handleClickOutside);
+    return () =>
+      document.removeEventListener("pointerdown", handleClickOutside);
   }, []);
 
   return (

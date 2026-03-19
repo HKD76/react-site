@@ -9,6 +9,7 @@
 }
 .about-hero-square {
   flex: 1 1 calc(50% - 20px);
+  padding: 0 20px;
 }
 
 .about-hero-square:nth-child(1),
@@ -30,4 +31,18 @@
   text-align: center;
   margin-top: 80px;
   font-size: 1.2rem;
+}
+@media (max-width: 992px){
+  .about-hero-square{
+    .title{
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+  }
+  .about-hero-square:nth-child(2),
+  .about-hero-square:nth-child(3),
+  .about-hero-square:nth-child(4) {
+    display: none;
+  }
+
 }
