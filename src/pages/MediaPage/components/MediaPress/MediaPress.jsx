@@ -1,19 +1,30 @@
 import "./MediaPress.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function MediaPress() {
   return (
     <section className="media-press">
-      <div className="media-press-container">
+      <motion.div
+        className="media-press-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="media-press-content">
-          <h2 className="media-press-title">
+          <motion.h2 variants={fadeInUpItem} className="media-press-title">
             Les parutions en presses de RealTiMES
-          </h2>
-          <p className="media-press-text">
+          </motion.h2>
+          <motion.p variants={fadeInUpItem} className="media-press-text">
             Cliquer sur l'icon "Voir" en face de chaque Media pour visualiser la
             parution presse.
-          </p>
+          </motion.p>
         </div>
-        <div className="media-press-subcontent">
+        <motion.div variants={fadeInUpItem} className="media-press-subcontent">
           <div className="media-press-image">
             <img
               src="/images/lusine-nouvelle_logo_mod_1.webp"
@@ -30,8 +41,8 @@ export default function MediaPress() {
               Voir l'article
             </a>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
