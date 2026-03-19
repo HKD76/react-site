@@ -27,7 +27,7 @@ export default function TestimonialPage() {
         </div>
         <ClientsSlider logos={clientLogos} />
       </motion.div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
         <TestimonialAptar />
         <TestimonialData />

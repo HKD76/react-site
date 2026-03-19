@@ -33,7 +33,7 @@ export default function DemoPage() {
         </motion.p>
         <ClientsSlider logos={clientLogos} />
       </motion.div>
-      <img src="/images/gray-bottom-shape.svg" alt="Gray Shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="Gray Shape" />
       <motion.div
         className="page-container"
         variants={fadeInUpContainer}

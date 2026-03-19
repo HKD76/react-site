@@ -22,7 +22,7 @@ export default function ProjetPage() {
         </div>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="" />
       <div className="page-container">
         <ProjetStep />
       </div>

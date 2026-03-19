@@ -18,7 +18,7 @@ export default function AboutPage() {
         </div>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
         <AboutStory />
       </div>

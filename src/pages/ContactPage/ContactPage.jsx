@@ -16,7 +16,7 @@ export default function ContactPage() {
         </div>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <FAQSection />
       <CallToActionSection />
     </section>

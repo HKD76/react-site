@@ -20,7 +20,7 @@ export default function CasPage() {
         <p className="page-subtitle">Nos cas clients triés par secteur</p>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="Gray Bottom Shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="Gray Bottom Shape" />
       <div className="page-container">
         <CasMSD />
         <CasLDC />

@@ -25,7 +25,7 @@ export default function LogicielPage() {
         </p>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
         <LogicielAdvantage />
         <LogicielExample />
