@@ -5,11 +5,13 @@ import ContactHero from "./components/ContactHero/ContactHero";
 import ContactForm from "./components/ContactForm/ContactForm";
 import cards from "../../data/cards";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function ContactPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <ContactHero />
           <ContactForm />

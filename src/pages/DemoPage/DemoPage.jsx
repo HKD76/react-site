@@ -13,6 +13,7 @@ import cards from "../../data/cards";
 import { motion } from "framer-motion";
 import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function DemoPage() {
   return (
@@ -24,6 +25,7 @@ export default function DemoPage() {
         whileInView="show"
         viewport={{ once: true }}
       >
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <DemoHero />
           <DemoForm />
@@ -33,7 +35,11 @@ export default function DemoPage() {
         </motion.p>
         <ClientsSlider logos={clientLogos} />
       </motion.div>
-      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="Gray Shape" />
+      <img
+        className="gray-bottom-shape"
+        src="/images/gray-bottom-shape.svg"
+        alt="Gray Shape"
+      />
       <motion.div
         className="page-container"
         variants={fadeInUpContainer}

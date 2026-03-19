@@ -12,11 +12,13 @@ import LogicielInfo from "./components/LogicielInfo/LogicielInfo";
 import LogicielRtbox from "./components/LogicielRtbox/LogicielRtbox";
 import LogicielBoost from "./components/LogicielBoost/LogicielBoost";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function LogicielPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <LogicielHero />
         </div>

@@ -8,11 +8,13 @@ import AboutDashboard from "./components/AboutDashboard/AboutDashboard";
 import AboutReliability from "./components/AboutReliability/AboutReliability";
 import AboutData from "./components/AboutData/AboutData";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function AboutPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <AboutHero />
         </div>

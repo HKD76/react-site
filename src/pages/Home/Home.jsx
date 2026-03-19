@@ -14,7 +14,7 @@ import TrySection from "../../components/TrySection/TrySection";
 import { clientLogos } from "../../data/clientsLogos";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import cards from "../../data/cards";
-import HeroBackground from "../../components/HeroBackground/HeroBackground";
+import HeroBackground from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function Home() {
   return (

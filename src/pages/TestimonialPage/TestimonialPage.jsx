@@ -5,6 +5,7 @@ import TestimonialData from "./components/TestimonialData/TestimonialData";
 import { motion } from "framer-motion";
 import { clientLogos } from "../../data/clientsLogos";
 import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function TestimonialPage() {
   return (
@@ -16,6 +17,7 @@ export default function TestimonialPage() {
         whileInView="show"
         viewport={{ once: true }}
       >
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <motion.h2 variants={fadeInUpItem} className="title">
             Gain de productivité jusqu'à 30%, ils témoignent

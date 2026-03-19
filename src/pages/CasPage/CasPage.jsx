@@ -8,12 +8,14 @@ import CasLaitiere from "./components/CasLaitiere/CasLaitiere";
 import CasKnauf from "./components/CasKnauf/CasKnauf";
 import CasSodipan from "./components/CasSodipan/CasSodipan";
 import CasPanzani from "./components/CasPanzani/CasPanzani";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 import { clientLogos } from "../../data/clientsLogos";
 
 export default function CasPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <CasHero />
         </div>
