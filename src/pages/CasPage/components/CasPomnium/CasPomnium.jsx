@@ -1,12 +1,23 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 import "./CasPomnium.css";
 
 export default function CasPomnium() {
   const [open, setOpen] = useState(false);
   return (
     <section className="cas-pomnium">
-      <div className="cas-pomnium-container">
-        <div className="cas-pomnium-content">
+      <motion.div
+        className="cas-pomnium-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={fadeInUpItem} className="cas-pomnium-content">
           <div className="cas-pomnium-content-header">
             <h2 className="cas-pomnium-content-header-title">Industrie</h2>
             <div className="cas-pomnium-content-header-logo">
@@ -23,15 +34,17 @@ export default function CasPomnium() {
             expansions, la productivité des usines et le suivi de performances
             industrielles est un must have.
           </p>
-        </div>
-        <div className="cas-pomnium-subcontent" onClick={() => setOpen(!open)}>
+        </motion.div>
+        <motion.div variants={fadeInUpItem} className="cas-pomnium-subcontent" onClick={() => setOpen(!open)}>
           <div className="cas-pomnium-subtext">
-            <p className="cas-pomnium-subtext-title">Cas client Plastic Omnium</p>
+            <p className="cas-pomnium-subtext-title">
+              Cas client Plastic Omnium
+            </p>
             <div className={`cas-pomnium-subtext-cross ${open ? "open" : ""}`}>
               <img src="/images/plus.svg" alt="cross" />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className={`cas-pomnium-slide ${open ? "open" : ""}`}>
           <div className="cas-pomnium-image">
             <img
@@ -40,7 +53,7 @@ export default function CasPomnium() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

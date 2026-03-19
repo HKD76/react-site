@@ -1,12 +1,23 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 import "./CasPanzani.css";
 
 export default function CasPanzani() {
   const [open, setOpen] = useState(false);
   return (
     <section className="cas-panzani">
-      <div className="cas-panzani-container">
-        <div className="cas-panzani-content">
+      <motion.div
+        className="cas-panzani-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={fadeInUpItem} className="cas-panzani-content">
           <div className="cas-panzani-content-header">
             <h2 className="cas-panzani-content-header-title">
               Agro-alimentaire
@@ -23,21 +34,23 @@ export default function CasPanzani() {
             installations des usines du secteur. Le besoin en rendement est
             important. Le suivi de performances est crucial.
           </p>
-        </div>
-        <div className="cas-panzani-subcontent" onClick={() => setOpen(!open)}>
+        </motion.div>
+        <motion.div variants={fadeInUpItem} className="cas-panzani-subcontent" onClick={() => setOpen(!open)}>
           <div className="cas-panzani-subtext">
             <p className="cas-panzani-subtext-title">Cas client Panzani</p>
             <div className={`cas-panzani-subtext-cross ${open ? "open" : ""}`}>
               <img src="/images/plus.svg" alt="cross" />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className={`cas-panzani-slide ${open ? "open" : ""}`}>
           <div className="cas-panzani-image">
-            <p className="cas-panzani-image-text">Pas de cas client pour le moment</p>
+            <p className="cas-panzani-image-text">
+              Pas de cas client pour le moment
+            </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

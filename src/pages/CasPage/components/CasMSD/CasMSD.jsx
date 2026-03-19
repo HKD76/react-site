@@ -1,14 +1,25 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 import "./CasMSD.css";
 
 export default function CasMSD() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <section className="cas-msd">
-      <div className="cas-msd-container">
-        <div className="cas-msd-content">
+      <motion.div
+        className="cas-msd-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={fadeInUpItem} className="cas-msd-content">
           <div className="cas-msd-content-header">
             <h2 className="cas-msd-content-header-title">Santé animale</h2>
             <div className="cas-msd-content-header-logo">
@@ -22,15 +33,15 @@ export default function CasMSD() {
             lorsqu'ils nous solicitent pour l'amélioration continue du système
             de production.
           </p>
-        </div>
-        <div className="cas-msd-subcontent" onClick={() => setOpen(!open)}>
+        </motion.div>
+        <motion.div variants={fadeInUpItem} className="cas-msd-subcontent" onClick={() => setOpen(!open)}>
           <div className="cas-msd-subtext">
             <p className="cas-msd-subtext-title">Cas client MSD</p>
             <div className={`cas-msd-subtext-cross ${open ? "open" : ""}`}>
               <img src="/images/plus.svg" alt="cross" />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className={`cas-msd-slide ${open ? "open" : ""}`}>
           <Swiper
             modules={[Autoplay]}
@@ -55,7 +66,7 @@ export default function CasMSD() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
