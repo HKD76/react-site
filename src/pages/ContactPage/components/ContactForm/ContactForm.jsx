@@ -1,11 +1,21 @@
 import "./ContactForm.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function TarifForm() {
-    
   return (
     <section className="contact-form">
-      <div className="contact-form-container">
-        <div id="contact-form" className="contact-form-card">
+      <motion.div
+        className="contact-form-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={fadeInUpItem} id="contact-form" className="contact-form-card">
           <form className="contact-form-card-content" action="">
             <div className="contact-form-card-field">
               <label className="contact-form-card-label" htmlFor="nom">
@@ -76,8 +86,8 @@ export default function TarifForm() {
               Envoyer
             </button>
           </form>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
