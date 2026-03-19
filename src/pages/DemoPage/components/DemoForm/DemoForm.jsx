@@ -1,10 +1,25 @@
 import "./DemoForm.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function TarifForm() {
   return (
     <section className="form-form">
-      <div className="form-form-container">
-        <div id="form-form" className="form-form-card">
+      <motion.div
+        className="form-form-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div
+          variants={fadeInUpItem}
+          id="form-form"
+          className="form-form-card"
+        >
           <form className="form-form-card-content" action="">
             <div className="form-form-card-field">
               <label className="form-form-card-label" htmlFor="nom">
@@ -65,8 +80,8 @@ export default function TarifForm() {
               Envoyer
             </button>
           </form>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
