@@ -1,14 +1,24 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
 import "./FAQSection.css";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
   return (
     <section className="faq-section">
-      <div className="faq-container">
-        <h2 className="title">F.A.Q Les questions fréquentes</h2>
+      <motion.div
+        className="faq-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.h2 variants={fadeInUpItem} className="title">
+          F.A.Q Les questions fréquentes
+        </motion.h2>
         <div className="faq-content">
-          <div className="faq-card">
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
@@ -32,8 +42,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
@@ -60,8 +70,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 2 ? null : 2)}
@@ -85,8 +95,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 3 ? null : 3)}
@@ -111,8 +121,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 4 ? null : 4)}
@@ -137,8 +147,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 5 ? null : 5)}
@@ -164,8 +174,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 6 ? null : 6)}
@@ -190,8 +200,8 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="faq-card">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="faq-card">
             <div
               className="faq-subcontent"
               onClick={() => setOpenIndex(openIndex === 7 ? null : 7)}
@@ -216,9 +226,9 @@ export default function FAQSection() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
