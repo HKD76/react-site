@@ -14,11 +14,13 @@ import TrySection from "../../components/TrySection/TrySection";
 import { clientLogos } from "../../data/clientsLogos";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import cards from "../../data/cards";
+import HeroBackground from "../../components/HeroBackground/HeroBackground";
 
 export default function Home() {
   return (
     <>
       <div className="page-background">
+        <HeroBackground />
         <div className="page-container">
           <header>
             <HeroSection />
