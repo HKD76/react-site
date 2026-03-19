@@ -197,6 +197,12 @@ body {
 .page-background {
   background-color: #f1f1f1;
   min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.page-content{
+  position: relative;
+  z-index: 1
 }
 .page-background-black {
   background-color: #000;
@@ -215,6 +221,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 .title {
   background: linear-gradient(90deg, black 0%, #6fc400 100%);

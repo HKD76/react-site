@@ -13,6 +13,7 @@ import StatsSection from "../../components/StatsSection/StatsSection";
 import TrySection from "../../components/TrySection/TrySection";
 import { clientLogos } from "../../data/clientsLogos";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
+import DataFlowBackground from "../../components/DataFlowBackground/DataFlowBackground";
 import cards from "../../data/cards";
 
 export default function Home() {
@@ -27,8 +28,10 @@ export default function Home() {
             <FeaturesSection cards={cards} />
           </div>
         </div>
-        <ClientsSection />
-        <ClientsSlider logos={clientLogos} />
+        <div className="page-content">
+          <ClientsSection />
+          <ClientsSlider logos={clientLogos} />
+        </div>
       </div>
       <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
