@@ -2,7 +2,7 @@ import CallToActionSection from "../../components/CallToActionSection/CallToActi
 import FAQSection from "../../components/FAQSection/FAQSection";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import ContactHero from "./components/ContactHero/ContactHero";
-import ContactForm from "./components/ContactForm/ContactForm";
+import ContactFormTemp from "./components/ContactForm/ContactFormTemp";
 import cards from "../../data/cards";
 import { clientLogos } from "../../data/clientsLogos";
 import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
@@ -14,7 +14,7 @@ export default function ContactPage() {
         <HeroBackgroundDataFlow />
         <div className="page-container">
           <ContactHero />
-          <ContactForm />
+          <ContactFormTemp />
         </div>
         <ClientsSlider logos={clientLogos} />
       </div>

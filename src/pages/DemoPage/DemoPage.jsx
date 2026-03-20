@@ -8,7 +8,7 @@ import QualitySection from "../Home/components/QualitySection/QualitySection";
 import SupportSection from "../Home/components/SupportSection/SupportSection";
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import DemoHero from "./components/DemoHero/DemoHero";
-import DemoForm from "./components/DemoForm/DemoForm";
+import DemoFormTemp from "./components/DemoForm/DemoFormTemp";
 import cards from "../../data/cards";
 import { motion } from "framer-motion";
 import { fadeInUpContainer, fadeInUpItem } from "../../animation/animation";
@@ -28,7 +28,7 @@ export default function DemoPage() {
         <HeroBackgroundDataFlow />
         <div className="page-container">
           <DemoHero />
-          <DemoForm />
+          <DemoFormTemp />
         </div>
         <motion.p variants={fadeInUpItem} className="page-subtitle">
           Nos clients sont des références internationales

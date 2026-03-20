@@ -11,8 +11,10 @@
 .tarif-form-card-content {
   margin: 0 40px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: auto;
 }
 .tarif-form-card-label {
   margin-bottom: 6px;
@@ -64,6 +66,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: 0.2s;
+  text-decoration: none;
 }
 
 .tarif-form-card-button:hover {

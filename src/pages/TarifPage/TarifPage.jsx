@@ -1,5 +1,5 @@
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
-import TarifForm from "./components/TarifForm/TarifForm";
+import TarifFormTemp from "./components/TarifForm/TarifFormTemp";
 import TarifHero from "./components/TarifHero/TarifHero";
 import FAQSection from "../../components/FAQSection/FAQSection";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
@@ -14,7 +14,7 @@ export default function TarifPage(){
                 <HeroBackgroundDataFlow />
                 <div className="page-container">
                     <TarifHero />
-                    <TarifForm />
+                    <TarifFormTemp />
                 </div>
                 <ClientsSlider logos={clientLogos} />   
             </div>

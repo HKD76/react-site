@@ -1,4 +1,5 @@
 import "./TarifForm.css";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   fadeInUpContainer,
@@ -6,6 +7,47 @@ import {
 } from "../../../../animation/animation";
 
 export default function TarifForm() {
+  const [formData, setFormData] = useState({
+    nom: "",
+    prenom: "",
+    email: "",
+    entreprise: "",
+    num: "",
+    texte: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+
+      alert(result.message);
+      setFormData({
+        nom: "",
+        prenom: "",
+        email: "",
+        entreprise: "",
+        num: "",
+        texte: "",
+      }); // reset
+    } catch (error) {
+      console.error(error);
+      alert("Erreur lors de l'envoi, réessaye");
+    }
+  };
   return (
     <section className="tarif-form">
       <motion.div
@@ -15,8 +57,16 @@ export default function TarifForm() {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <motion.div variants={fadeInUpItem} id="tarif-form" className="tarif-form-card">
-          <form className="tarif-form-card-content" action="">
+        <motion.div
+          variants={fadeInUpItem}
+          id="tarif-form"
+          className="tarif-form-card"
+        >
+          <form
+            className="tarif-form-card-content"
+            action=""
+            onSubmit={sendEmail}
+          >
             <div className="tarif-form-card-field">
               <label className="tarif-form-card-label" htmlFor="nom">
                 Nom
@@ -26,6 +76,8 @@ export default function TarifForm() {
                 name="nom"
                 type="text"
                 placeholder="Nom"
+                value={formData.nom}
+                onChange={handleChange}
               />
             </div>
             <div className="tarif-form-card-field">
@@ -37,6 +89,8 @@ export default function TarifForm() {
                 name="prenom"
                 type="text"
                 placeholder="Prenom"
+                value={formData.prenom}
+                onChange={handleChange}
               />
             </div>
             <div className="tarif-form-card-field">
@@ -48,6 +102,8 @@ export default function TarifForm() {
                 name="email"
                 type="text"
                 placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
             <div className="tarif-form-card-field">
@@ -59,6 +115,8 @@ export default function TarifForm() {
                 name="entreprise"
                 type="text"
                 placeholder="Entreprise"
+                value={formData.entreprise}
+                onChange={handleChange}
               />
             </div>
             <div className="tarif-form-card-field full">
@@ -70,6 +128,8 @@ export default function TarifForm() {
                 name="num"
                 type="text"
                 placeholder="Votre numéro"
+                value={formData.num}
+                onChange={handleChange}
               />
             </div>
             <div className="tarif-form-card-field full">
@@ -80,6 +140,8 @@ export default function TarifForm() {
                 className="tarif-form-card-input"
                 name="texte"
                 id="textearea"
+                value={formData.texte}
+                onChange={handleChange}
               ></textarea>
             </div>
             <button className="tarif-form-card-button" type="submit">
