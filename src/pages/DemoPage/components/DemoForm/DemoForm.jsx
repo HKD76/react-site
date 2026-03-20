@@ -13,6 +13,7 @@ export default function DemoForm() {
     email: "",
     entreprise: "",
     num: "",
+    type: "Demande de démo",
   });
 
   const handleChange = (e) => {
@@ -38,7 +39,8 @@ export default function DemoForm() {
         email: "",
         entreprise: "",
         num: "",
-      }); // reset
+        type: "Demande de démo",
+      });
     } catch (error) {
       console.error(error);
       alert("Erreur lors de l'envoi, réessaye");
@@ -71,6 +73,7 @@ export default function DemoForm() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="demo-form-card-field">
               <label htmlFor="prenom">Prénom</label>
               <input
@@ -82,6 +85,7 @@ export default function DemoForm() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="demo-form-card-field">
               <label htmlFor="email">Email</label>
               <input
@@ -93,6 +97,7 @@ export default function DemoForm() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="demo-form-card-field">
               <label htmlFor="entreprise">Entreprise</label>
               <input
@@ -104,6 +109,7 @@ export default function DemoForm() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="demo-form-card-field full">
               <label htmlFor="num">Téléphone</label>
               <input
@@ -115,6 +121,9 @@ export default function DemoForm() {
                 onChange={handleChange}
               />
             </div>
+
+            <input type="hidden" name="type" value={formData.type} />
+
             <button type="submit" className="demo-form-card-button">
               Envoyer
             </button>

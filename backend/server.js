@@ -13,7 +13,7 @@ app.use(
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "ssl0.ovh.net",
   port: 465,
   secure: true,
   auth: {
