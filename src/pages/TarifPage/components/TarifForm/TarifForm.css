@@ -11,10 +11,8 @@
 .tarif-form-card-content {
   margin: 0 40px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
 }
 .tarif-form-card-label {
   margin-bottom: 6px;

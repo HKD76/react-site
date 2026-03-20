@@ -12,11 +12,10 @@ app.use(
 );
 app.use(express.json());
 
-// config email
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465, 
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD,
@@ -24,9 +23,9 @@ const transporter = nodemailer.createTransport({
 });
 transporter.verify((error, success) => {
   if (error) {
-    console.log("❌ Erreur config SMTP :", error);
+    console.error("Erreur SMTP :", error);
   } else {
-    console.log("✅ Serveur prêt à envoyer des mails");
+    console.log("SMTP prêt ✅");
   }
 });
 // route API
