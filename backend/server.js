@@ -5,15 +5,17 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors({
-  origin: "http://localhost:5173"
-}));
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  }),
+);
 app.use(express.json());
 
 // config email
 const transporter = nodemailer.createTransport({
-  host: "smtp.office365.com",
-  port: 587,
+  host: "smtp.gmail.com",
+  port: 465, 
   secure: false,
   auth: {
     user: process.env.EMAIL,
@@ -34,7 +36,7 @@ app.post("/send-email", async (req, res) => {
   try {
     await transporter.sendMail({
       from: email,
-      to: process.env.EMAIL,
+      to: "contact@realtimes.fr",
       subject: "Nouveau message depuis le site",
       text: `
 Nom: ${nom}
