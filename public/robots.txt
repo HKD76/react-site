@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://monsite.com/sitemap.xml
+Sitemap: https://realtimes.fr//sitemap.xml
