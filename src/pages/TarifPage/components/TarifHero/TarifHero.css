@@ -62,3 +62,7 @@
   align-self: center;
   margin: 20px 0;
 }
+.tarif-hero-card-button:hover {
+  opacity: 0.85;
+  background-color: #333;
+}
