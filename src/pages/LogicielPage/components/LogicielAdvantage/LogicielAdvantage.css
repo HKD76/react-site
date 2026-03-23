@@ -61,6 +61,9 @@
   font-weight: 500;
   transition: background-color 0.25s;
 }
+.logiciel-advantage-link:hover {
+  background-color: #333;
+}
 @media (max-width: 992px) {
   .logiciel-advantage-content {
     flex-direction: column;
