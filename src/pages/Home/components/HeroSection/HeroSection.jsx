@@ -23,7 +23,7 @@ export default function HeroSection() {
               Solution complète de suivi
             </Link>
 
-            <Link to="/demander-une-demo" className="button secondary">
+            <Link to="/demander-une-demo" className="button-secondary">
               Demander une démo
             </Link>
           </motion.div>
