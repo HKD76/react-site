@@ -61,7 +61,9 @@
   font-family: Opensauceone, sans-serif;
   font-weight: 500;
   transition: background-color 0.25s;
-
+}
+.ebook-hero-card-button:hover {
+  background-color: #333;
 }
 @media screen and (max-width: 992px) {
   .ebook-hero-card{
