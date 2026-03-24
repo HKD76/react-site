@@ -322,6 +322,10 @@ body {
   font-weight: bolder;
   color: black;
 }
+.version {
+  font-size: 0.8rem;
+  color: #717171;
+}
 img {
   max-width: 100%;
   vertical-align: middle;
