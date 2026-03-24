@@ -5,6 +5,7 @@ import {
   fadeInUpContainer,
   fadeInUpItem,
 } from "../../../../animation/animation";
+import { trackEvent } from "../../../../analytics";
 
 export default function TarifForm() {
   const [formData, setFormData] = useState({
@@ -46,6 +47,8 @@ export default function TarifForm() {
       }
 
       alert(result.message);
+
+      trackEvent("Formulaire", "Envoi", "Tarif Form");
       setFormData({
         nom: "",
         prenom: "",
