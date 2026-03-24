@@ -24,7 +24,7 @@ export default function TarifForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", {
+      const res = await fetch("/api/send-email.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,7 +32,18 @@ export default function TarifForm() {
         body: JSON.stringify(formData),
       });
 
+      const contentType = res.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        const rawResponse = await res.text();
+        throw new Error(
+          `Réponse API invalide (attendu JSON). Aperçu: ${rawResponse.slice(0, 120)}`,
+        );
+      }
+
       const result = await res.json();
+      if (!res.ok) {
+        throw new Error(result.message || "Erreur API");
+      }
 
       alert(result.message);
       setFormData({

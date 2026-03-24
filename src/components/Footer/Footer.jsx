@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
+  const appVersion = import.meta.env.VITE_APP_VERSION || "1.0";
+  const legalPath = import.meta.env.VITE_LEGAL_PATH || "/mentions-legales";
+
   return (
     <footer className="footer-component">
       <div className="footer-container">
@@ -111,10 +114,10 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container-large">
           <div className="footer-bottom-wrapper">
-            <div className="footer-credit-text">© 2024 RealTiMES</div>
+            <div className="footer-credit-text">© 2026 RealTiMES</div>
             <div className="footer-legal">
-              <p className="version">Version 1.0</p>
-              <Link to="/mentions-legales" className="footer-legal-link">
+              <p className="version">Version {appVersion}</p>
+              <Link to={legalPath} className="footer-legal-link">
                 Mentions légales
               </Link>
               <Link to="/rgpd" className="footer-legal-link">
