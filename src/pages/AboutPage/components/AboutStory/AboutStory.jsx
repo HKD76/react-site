@@ -1,10 +1,21 @@
 import "./AboutStory.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function StorySection() {
   return (
     <section className="story-section">
-      <div className="story-container">
-        <div className="story-content">
+      <motion.div
+        className="story-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={fadeInUpItem} className="story-content">
           <p className="story-label">L'HISTOIRE</p>
           <h2 className="story-title">Expert en suivi de production</h2>
           <p className="story-text">
@@ -19,14 +30,14 @@ export default function StorySection() {
           <p className="story-text">
             Nous sommes à votre service pour répondre à vos questions.
           </p>
-        </div>
-        <div className="story-image">
+        </motion.div>
+        <motion.div variants={fadeInUpItem} className="story-image">
           <img
             src="/images/Dashboard-realtimes-vecto-p-1080.webp"
             alt="Dashboard"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

@@ -8,17 +8,19 @@ import AboutDashboard from "./components/AboutDashboard/AboutDashboard";
 import AboutReliability from "./components/AboutReliability/AboutReliability";
 import AboutData from "./components/AboutData/AboutData";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function AboutPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <AboutHero />
         </div>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
       <div className="page-container">
         <AboutStory />
       </div>

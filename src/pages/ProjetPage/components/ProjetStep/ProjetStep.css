@@ -1,0 +1,17 @@
+.projet-step-title {
+  background: linear-gradient(90deg, black 0%, #6fc400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  background-clip: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: unset;
+  font-weight: 400;
+  padding-top: 40px;
+}

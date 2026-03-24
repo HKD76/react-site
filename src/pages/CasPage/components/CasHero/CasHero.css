@@ -1,0 +1,21 @@
+.cas-hero-container {
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 40px;
+  li {
+    list-style: none;
+  }
+  .title {
+    padding: 40px 0;
+  }
+  .cas-hero-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .highlight {
+    font-weight: 700;
+    color: black;
+  }
+}

@@ -1,0 +1,77 @@
+.ebook-hero {
+    padding: 40px 0;
+}
+.ebook-hero-container {
+  padding: 40px 0;
+  margin: 0 40px;
+}
+.ebook-hero-title {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, black 0%, #6fc400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: unset;
+}
+.ebook-hero-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px 0;
+}
+.ebook-hero-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 2rem;
+}
+.ebook-hero-card-content{
+  max-width: 550px;
+}
+.ebook-hero-card-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.ebook-hero-card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.ebook-hero-card-button {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px none var(--black);
+  background-color: var(--t-colors--brand);
+  color: #fff;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+.ebook-hero-card-button:hover {
+  background-color: #333;
+}
+@media screen and (max-width: 992px) {
+  .ebook-hero-card{
+    flex-direction: column;
+  }
+  .ebook-hero-card-content{
+    max-width: unset;
+    text-align: center;
+    padding: 40px 0;
+  }
+}

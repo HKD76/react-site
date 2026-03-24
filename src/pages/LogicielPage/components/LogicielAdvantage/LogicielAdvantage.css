@@ -1,0 +1,76 @@
+.logiciel-advantage-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.logiciel-advantage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logiciel-advantage-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 40px 0;
+}
+.logiciel-advantage-card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.logiciel-advantage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+.logiciel-advantage-image {
+  width: 40px;
+  height: 40px;
+}
+.logiciel-advantage-card-title {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.logiciel-advantage-card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 24px;
+}
+.logiciel-advantage-link {
+  align-self: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px none var(--black);
+  background-color: var(--t-colors--brand);
+  color: #fff;
+  text-align: center;
+  border-radius: 200px;
+  padding: 0.75rem 0.8rem;
+  font-family: Opensauceone, sans-serif;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+.logiciel-advantage-link:hover {
+  background-color: #333;
+}
+@media (max-width: 992px) {
+  .logiciel-advantage-content {
+    flex-direction: column;
+  }
+  .logiciel-advantage-card {
+    max-width: 800px;
+    width: unset;
+    margin:  0 20px;
+  }
+}

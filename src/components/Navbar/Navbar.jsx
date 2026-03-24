@@ -11,17 +11,22 @@ export default function Navbar() {
     setOpenDropdown(openDropdown === id ? null : id);
   };
 
-  const toggleMobile = () => setMobileOpen((prev) => !prev);
+  const toggleMobile = () => {
+    setMobileOpen((prev) => !prev);
+    setOpenDropdown(null);
+  };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navbarRef.current && !navbarRef.current.contains(e.target)) {
         setOpenDropdown(null);
+        setMobileOpen(false);
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
+    document.addEventListener("pointerdown", handleClickOutside);
+    return () =>
+      document.removeEventListener("pointerdown", handleClickOutside);
   }, []);
 
   return (
@@ -75,9 +80,6 @@ export default function Navbar() {
               <ul
                 className={`dropdown-menu ${openDropdown === "ressources" ? "show" : ""}`}
               >
-                <li>
-                  <Link to="/ressources/blog">Blog</Link>
-                </li>
                 <li>
                   <Link to="/ressources/ebook">eBook</Link>
                 </li>

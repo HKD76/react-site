@@ -2,7 +2,7 @@
   padding: 40px 0;
   background-image: linear-gradient(92deg, #6fc4003d 41%, #fff 60%);
   border-radius: 14px;
-  margin-top: 40px;
+  margin: 40px 40px 0 40px;
 }
 .data-content {
   display: flex;
@@ -23,7 +23,7 @@
 
 .data-text {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #555;
   margin-bottom: 24px;
 }

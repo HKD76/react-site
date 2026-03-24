@@ -1,11 +1,24 @@
 import ClientsSlider from "../../components/ClientsSlider/ClientsSlider";
 import LogicielHero from "./components/LogicielHero/LogicielHero";
+import LogicielAdvantage from "./components/LogicielAdvantage/LogicielAdvantage";
+import LogicielExample from "./components/LogicielExample/LogicielExample";
+import LogicielProductivity from "./components/LogicielProductivity/LogicielProductivity";
+import LogicielRealTimes from "./components/LogicielRealTimes/LogicielRealTimes";
+import LogicielInstal from "./components/LogicielInstal/LogicielInstal";
+import TestimonialData from "../TestimonialPage/components/TestimonialData/TestimonialData";
+import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
+import LogicielDeploy from "./components/LogicielDeploy/LogicielDeploy";
+import LogicielInfo from "./components/LogicielInfo/LogicielInfo";
+import LogicielRtbox from "./components/LogicielRtbox/LogicielRtbox";
+import LogicielBoost from "./components/LogicielBoost/LogicielBoost";
 import { clientLogos } from "../../data/clientsLogos";
+import HeroBackgroundDataFlow from "../../components/HeroBackgroundDataFlow/HeroBackgroundDataFlow";
 
 export default function LogicielPage() {
   return (
     <section>
       <div className="page-background">
+        <HeroBackgroundDataFlow />
         <div className="page-container">
           <LogicielHero />
         </div>
@@ -14,7 +27,34 @@ export default function LogicielPage() {
         </p>
         <ClientsSlider logos={clientLogos} />
       </div>
-      <img src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <img className="gray-bottom-shape" src="/images/gray-bottom-shape.svg" alt="gray-bottom-shape" />
+      <div className="page-container">
+        <LogicielAdvantage />
+        <LogicielExample />
+        <LogicielProductivity />
+      </div>
+      <div className="page-background-black">
+        <div className="page-container">
+          <LogicielRealTimes />
+        </div>
+      </div>
+      <div className="page-container">
+        <LogicielInstal />
+        <LogicielDeploy />
+      </div>
+      <div className="page-background-black">
+        <div className="page-container">
+          <LogicielInfo />
+        </div>
+      </div>
+      <div className="page-container">
+        <LogicielRtbox />
+        <LogicielBoost />
+      </div>
+      <TestimonialSection />
+      <div className="page-container">
+        <TestimonialData />
+      </div>
     </section>
   );
 }

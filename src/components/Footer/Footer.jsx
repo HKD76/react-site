@@ -113,6 +113,7 @@ export default function Footer() {
           <div className="footer-bottom-wrapper">
             <div className="footer-credit-text">© 2024 RealTiMES</div>
             <div className="footer-legal">
+              <p className="version">Version 1.0</p>
               <Link to="/mentions-legales" className="footer-legal-link">
                 Mentions légales
               </Link>

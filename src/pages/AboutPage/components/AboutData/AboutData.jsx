@@ -1,11 +1,22 @@
 import "./AboutData.css";
+import { motion } from "framer-motion";
+import {
+  fadeInUpContainer,
+  fadeInUpItem,
+} from "../../../../animation/animation";
 
 export default function AboutData() {
   return (
     <section className="about-data">
-      <div className="about-data-container">
+      <motion.div
+        className="about-data-container"
+        variants={fadeInUpContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="about-data-card">
-          <div className="about-data-content">
+          <motion.div variants={fadeInUpItem} className="about-data-content">
             <h2 className="about-data-title">
               Meilleure catégorisation des données
             </h2>
@@ -17,12 +28,12 @@ export default function AboutData() {
               suivi de production et une meilleure réactivité sont possibles
               grâce à un rapport envoyé dès le lendemain.
             </p>
-          </div>
-          <div className="about-data-image">
+          </motion.div>
+          <motion.div variants={fadeInUpItem} className="about-data-image">
             <img src="/images/ecran-1080.webp" alt="Ecran Data" />
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

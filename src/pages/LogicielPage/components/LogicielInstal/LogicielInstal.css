@@ -1,0 +1,41 @@
+.logiciel-instal {
+  padding: 40px 0;
+  background-image: linear-gradient(
+    98deg,
+    var(--u-colors--light-grey),
+    #fff 41%
+  );
+  border-radius: 14px;
+  margin: 40px;
+}
+.logiciel-instal-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.logiciel-instal-content {
+  max-width: 600px;
+  padding: 0 40px;
+}
+.logiciel-instal-title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.logiciel-instal-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.logiciel-instal-image {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .logiciel-instal-card {
+    flex-direction: column;
+  }
+}
