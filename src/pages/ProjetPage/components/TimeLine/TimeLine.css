@@ -91,6 +91,9 @@
   }
 
   .timeline-dot {
-    margin-left: 12px;
+    margin: 0 11px;
+  }
+  .timeline-item.active{
+    transform: scale(1.0);
   }
 }
